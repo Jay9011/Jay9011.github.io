@@ -48,7 +48,7 @@
   {% include_cached favicons.html %}
 
   {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
-    <link href="{{ site.data.origin[type].webfonts | relative_url }}" rel="stylesheet">
+    <link rel="preconnect" href="{{ site.data.origin[type].webfonts | relative_url }}">
 
   {% else %}
     {% for cdn in site.data.origin[type].cdns %}
@@ -56,9 +56,10 @@
       <link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }}>
     {% endfor %}
 
-    <link rel="stylesheet" href="{{ site.data.origin[type].webfonts | relative_url }}">
+    <link rel="preconnect" href="{{ site.data.origin[type].webfonts | relative_url }}">
   {% endif %}
-
+  <!-- Feed to RSS -->
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/rss.xml" title="{{ site.title }} Feed">
   <!-- GA -->
   {% if jekyll.environment == 'production' and site.google_analytics.id != empty and site.google_analytics.id %}
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials">
@@ -66,6 +67,15 @@
 
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJCY18GQ1Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RJCY18GQ1Y');
+    </script>
   {% endif %}
 
   <!-- Bootstrap -->
@@ -75,6 +85,11 @@
   <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
 
   <link rel="stylesheet" href="{{ '/assets/css/:THEME.css' | replace: ':THEME', site.theme | relative_url }}">
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+  <link rel="preconnect" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
 
   {% if site.toc and page.toc %}
     <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">

@@ -31,8 +31,8 @@ copyright:
   # Shown at the bottom of the post
   license:
     template: Bu gönderi :LICENSE_NAME lisansı altındadır.
-    name: CC BY 4.0
-    link: https://creativecommons.org/licenses/by/4.0/deed.tr
+    name: CC BY-NC-ND 4.0
+    link: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr
 
   # Displayed in the footer
   brief: Bazı hakları saklıdır.

@@ -35,6 +35,10 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: $font-family-base;
+  font-weight: 400;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
 }
 
 /* --- Typography --- */
@@ -52,12 +56,13 @@ body {
       $factor: 0.18rem;
 
       @if $i == 1 {
-        $factor: 0.23rem;
+        $factor: 0.2rem;
+        letter-spacing: 0;
       }
 
-      font-size: 1rem + (5 - $i) * $factor;
+      font-size: 1.2rem + (5 - $i) * $factor;
     } @else {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 }
@@ -365,6 +370,11 @@ main {
     margin-bottom: 1.5rem;
   }
 
+  article > header {
+    border-bottom: 3px solid var(--sidebar-muted-color);
+    padding-bottom: 1.5rem;
+  }
+
   p {
     > a.popup {
       &:not(.normal):not(.left):not(.right) {
@@ -397,9 +407,20 @@ main {
 }
 
 .content {
-  font-size: 1.08rem;
+  font-family: $font-family-content;
+  font-size: 1.2rem;
+  font-weight: normal;
   margin-top: 2rem;
   overflow-wrap: break-word;
+  letter-spacing: 0.03rem;
+
+  h2 {
+    &::before {
+      content: '\f249';
+      font-family: 'FontAwesome';
+      margin-right: 0.5rem;
+    }
+  }
 
   a {
     &.popup {
@@ -473,6 +494,25 @@ main {
 
   dl > dd {
     margin-left: 1rem;
+  }
+
+  .keyword {
+    color: var(--keyword-color);
+    border: 1px solid var(--keyword-border-color);
+    border-radius: .25rem;
+    border-bottom-width: 0.15rem;
+    padding: 0.15rem 0.25rem;
+  }
+
+  .important {
+    color: var(--keyword-color);
+  }
+
+  .font_highlight {
+    color: var(--highlight-color);
+    background-color: var(--highlight-bg);
+    padding: 0.05rem 0.25rem;
+    border-radius: 0.25rem;
   }
 
   ::marker {
@@ -710,6 +750,8 @@ $btn-mb: 0.5rem;
 
   a {
     @extend %sidebar-links;
+    @extend %sidebar-link-hover;
+    @extend %clickable-transition;
   }
 
   #avatar {
@@ -741,7 +783,7 @@ $btn-mb: 0.5rem;
   .site-title {
     font-family: inherit;
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     letter-spacing: 0.25px;
     margin-top: 1.25rem;
@@ -812,6 +854,10 @@ $btn-mb: 0.5rem;
 
       &:not(:first-child) {
         margin-top: 0.25rem;
+      }
+
+      .sub_category {
+        padding-right: 0;
       }
     }
   }
@@ -1463,7 +1509,7 @@ search {
   }
 
   .content {
-    font-size: 1.03rem;
+    font-size: 1.2rem;
   }
 }
 

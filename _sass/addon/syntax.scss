@@ -44,6 +44,11 @@ html {
   color: var(--highlighter-rouge-color);
   margin-top: 0.5rem;
   margin-bottom: 1.2em; /* Override BS Inline-code style */
+  letter-spacing: 0;
+
+  >span {
+    color: var(--inline-highlight-color);
+  }
 }
 
 .highlight {
@@ -79,6 +84,7 @@ html {
       pre {
         overflow: visible; /* Fixed iOS safari overflow-x */
         word-break: normal; /* Fixed iOS safari linenos code break */
+        tab-size: 4;
       }
     }
   }
@@ -104,6 +110,7 @@ code {
     font-size: $code-font-size;
     padding: 3px 5px;
     word-break: break-word;
+    border: 1px solid var(--language-border-color);
     border-radius: 4px;
     background-color: var(--inline-code-bg);
   }

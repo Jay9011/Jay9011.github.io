@@ -5,20 +5,62 @@ layout: page
 
 {% include lang.html %}
 
-<div id="page-category">
-  <h1 class="ps-lg-2">
+<div id="page-category" class="container mt-4">
+  <h1 class="ps-lg-2 mb-4">
     <i class="far fa-folder-open fa-fw text-muted"></i>
     {{ page.title }}
     <span class="lead text-muted ps-2">{{ page.posts | size }}</span>
   </h1>
 
-  <ul class="content ps-0">
-    {% for post in page.posts %}
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="dash flex-grow-1"></span>
-        {% include datetime.html date=post.date class='text-muted small text-nowrap' lang=lang %}
-      </li>
-    {% endfor %}
-  </ul>
+  {% for post in page.posts %}
+    <div class="card card-wrapper mb-3">
+      <a href="{{ post.url | relative_url }}" class="row g-0 flex-md-row post-preview">
+        {% if post.image %}
+          {% assign src = post.image.path | default: post.image %}
+          {% unless src contains '//' %}
+            {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
+          {% endunless %}
+
+          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+          {% assign lqip = null %}
+
+          {% if post.image.lqip %}
+            {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
+          {% endif %}
+          <div class="col-md-3">
+            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
+          </div>
+          {% assign card_body_col = '9' %}
+        {% endif %}
+          <div class="col-md-{{ card_body_col }}">
+            {% if post.image %}
+            <div class="body my-2 mx-2">
+            {% else %}
+            <div class="body my-2 ms-4 me-2">
+            {% endif %}
+              <h2 class="title mt-0">{{ post.title }}</h5>
+              <p class="text text-muted">
+                {% include no-linenos.html content=post.content %}
+                {{ content | markdownify | strip_html | truncate: 200 | escape }}
+              </p>
+              <p class="text mb-0">
+                <small class="text-muted">
+                  <i class="far fa-calendar fa-fw me-1"></i> {% include datetime.html date=post.date lang=lang %}&nbsp;&nbsp;
+                  <!-- categories -->
+                  {% if post.categories.size > 0 %}
+                    <i class="far fa-folder-open fa-fw me-1"></i>
+                    <span class="categories">
+                      {% for category in post.categories %}
+                        {{ category }}
+                        {%- unless forloop.last -%},{%- endunless -%}
+                      {% endfor %}
+                    </span>
+                  {% endif %}
+                </small>
+              </p>
+            </div>
+          </div>
+      </a>
+    </div>
+  {% endfor %}
 </div>

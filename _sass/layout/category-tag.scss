@@ -33,6 +33,16 @@
       font-size: 1.1rem;
     }
   }
+
+  .body {
+    .title {
+      font-size: 1.2rem;
+    }
+
+    .text {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 /* tag icon */
@@ -44,13 +54,20 @@
   font-size: 1.25rem;
 }
 
-#page-category,
-#page-tag,
-#access-lastmod {
-  a:hover {
-    @extend %link-hover;
+.card {
+  --bs-card-border-color: none;
+  --bs-card-bg: none;
 
-    margin-bottom: -1px; /* Avoid jumping */
+  .title {
+    padding-top: 0.5rem;
+  }
+
+  .text {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 }
 

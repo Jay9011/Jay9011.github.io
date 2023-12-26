@@ -31,8 +31,8 @@ copyright:
   # Shown at the bottom of the post
   license:
     template: Bài viết này được cấp phép bởi tác giả theo giấy phép :LICENSE_NAME.
-    name: CC BY 4.0
-    link: https://creativecommons.org/licenses/by/4.0/
+    name: CC BY-NC-ND 4.0
+    link: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
   # Displayed in the footer
   brief: Một số quyền được bảo lưu.

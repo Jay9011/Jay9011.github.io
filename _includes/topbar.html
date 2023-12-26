@@ -11,9 +11,9 @@
       {% if paths.size == 0 or page.layout == 'home' %}
         <!-- index page -->
         <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
-
       {% else %}
         {% for item in paths %}
+        
           {% if forloop.first %}
             <span>
               <a href="{{ '/' | relative_url }}">
@@ -22,8 +22,21 @@
             </span>
 
           {% elsif forloop.last %}
-            {% if page.collection == 'tabs' %}
+            {% if page.collection == 'tabs' or page.collection == 'tabs2' %}
               <span>{{ site.data.locales[include.lang].tabs[item] | default: page.title }}</span>
+            {% elsif page.url contains '/posts/' %}
+              {% for category in page.categories %}
+                {% unless forloop.first %}
+                  <span></span>
+                {% endunless %}
+                {% assign category_slug = category | slugify %}
+                {% assign category_path = '/categories/' | append: category_slug %}
+                <a href="{{ category_path | relative_url }}">
+                  {{ site.data.locales[include.lang].categories[category_slug] | default: category | capitalize }}
+                </a>
+              {% endfor %}
+              <span></span>
+              <span>{{ page.title }}</span>
             {% else %}
               <span>{{ page.title }}</span>
             {% endif %}
@@ -40,7 +53,7 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <button type="button" id="sidebar-trigger" class="btn btn-link">
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar Menu">
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
@@ -55,7 +68,7 @@
       {% endif %}
     </div>
 
-    <button type="button" id="search-trigger" class="btn btn-link">
+    <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search Btn">
       <i class="fas fa-search fa-fw"></i>
     </button>
 
