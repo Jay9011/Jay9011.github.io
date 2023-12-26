@@ -19,3 +19,11 @@ package-lock.json
 .vscode
 
 # Misc
+.templates
+template.config.js
+
+frontmatter.json
+.frontmatter
+
+# 제외 포스트
+_posts/2023-08-07-포스트-테스트.md
