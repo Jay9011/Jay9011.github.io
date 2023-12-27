@@ -28,6 +28,16 @@ $code-dot-gap: 0.5rem !default;
 $code-icon-width: 1.75rem !default;
 
 /* fonts */
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 $font-family-base: 'Noto Sans KR', 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
 $font-family-heading: 'Noto Sans KR', Lato, 'Microsoft Yahei', sans-serif !default;
 $font-family-content: 'Pretendard Variable', 'Pretendard', -apple-system, 'Noto Sans KR', 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
+$font-family-serif: 'GangwonEdu_OTFBoldA', 'Noto Serif KR', serif !default;

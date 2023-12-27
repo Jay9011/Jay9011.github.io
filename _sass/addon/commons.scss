@@ -39,6 +39,10 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
   }
+
+  .serif {
+    font-family: $font-family-serif;
+  }
 }
 
 /* --- Typography --- */
@@ -53,16 +57,16 @@ body {
     }
 
     @if $i < 5 {
-      $factor: 0.18rem;
+      $factor: 0.13em;
 
       @if $i == 1 {
-        $factor: 0.2rem;
+        $factor: 0.23em;
         letter-spacing: 0;
       }
 
-      font-size: 1.2rem + (5 - $i) * $factor;
+      font-size: 1em + (5 - $i) * $factor;
     } @else {
-      font-size: 1.2rem;
+      font-size: 1em;
     }
   }
 }
@@ -408,7 +412,7 @@ main {
 
 .content {
   font-family: $font-family-content;
-  font-size: 1.2rem;
+  font-size: 1.13rem;
   font-weight: normal;
   margin-top: 2rem;
   overflow-wrap: break-word;
@@ -1582,3 +1586,9 @@ search {
     }
   }
 } /* min-width: 1650px */
+
+@media all and (min-width: 2200px) {
+  .content {
+    font-size: 1.25rem;
+  }
+} /* min-width: 2200px */
