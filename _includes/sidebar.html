@@ -43,7 +43,7 @@
       <!-- 프로그래밍 -->
       <li class="nav-item{% if page.url == '/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' | relative_url %}{{ " active" }}{% endif %}">
         <a href="{{ '/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' | relative_url }}" class="nav-link" >
-          <i class="far fa-folder-open fa-fw"></i>
+          <i class="fa-solid fa-laptop-code"></i>
           프로그래밍
           {% assign posts_size = site.categories['프로그래밍'] | size %}
           <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
@@ -63,6 +63,33 @@
             <i class="fa fa-angle-right"></i>
             코딩 테스트
             {% assign posts_size = site.categories['코딩테스트'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li>
+      </li>
+      <!-- 컴퓨터 과학 -->
+      <li class="nav-item{% if page.url == '/categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%BC%ED%95%99/' | relative_url %}{{ " active" }}{% endif %}">
+        <a href="{{ '/categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%BC%ED%95%99/' | relative_url }}" class="nav-link" >
+          <i class="fa-solid fa-computer"></i>
+          컴퓨터 과학
+          {% assign posts_size = site.categories['컴퓨터 과학'] | size %}
+          <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+        </a>
+        <!-- 자료구조 -->
+        <li class="nav-item{% if page.url == '/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            자료구조
+            {% assign posts_size = site.categories['자료구조'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li>
+        <!-- 알고리즘 -->
+        <li class="nav-item{% if page.url == '/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            알고리즘
+            {% assign posts_size = site.categories['알고리즘'] | size %}
             <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
           </a>
         </li>
