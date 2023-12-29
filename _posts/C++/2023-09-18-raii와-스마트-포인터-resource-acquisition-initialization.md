@@ -2,20 +2,20 @@
 title: RAII와 스마트 포인터 (Resource Acquisition Is Initialization)
 date: 2023-09-18 23:19:48 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - 프로그래밍
+  - C++
 tags:
-    - c
-    - 객체 지향
-    - 메모리
-    - 스마트 포인터
-    - 포인터
-    - 동적 할당
+  - c
+  - 객체 지향
+  - 동적
+  - 메모리
+  - 스마트 포인터
+  - 포인터
 keywords:
-    - RAII
-    - Resource Acquisition Is Initialization
-    - 스마트 포인터
-    - 객체 지향
+  - RAII
+  - Resource Acquisition Is Initialization
+  - 스마트 포인터
+  - 객체 지향
 ---
 
 <span class="keyword">**RAII(Resource Acquisition Is Initialization)**</span>는 주로 <span class="font_highlight">**객체 지향 프로그래밍에서 자원을 효과적으로 관리하기 위한 패러다임**</span>입니다.

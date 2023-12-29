@@ -2,21 +2,21 @@
 title: 동적 할당 키워드 (new, malloc, calloc, realloc, virtualAlloc)
 date: 2023-08-30 20:18:53 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - 프로그래밍
+  - C++
 tags:
-    - c
-    - 데이터
-    - 메모리
-    - 동적 할당
+  - c
+  - 데이터
+  - 동적
+  - 메모리
 keywords:
-    - calloc
-    - malloc
-    - new
-    - realloc
-    - 동적 할당
-    - 메모리
-    - virtualAlloc
+  - calloc
+  - malloc
+  - new
+  - realloc
+  - 동적 할당
+  - 메모리
+  - virtualAlloc
 ---
 
 # **동적 할당 (Dynamic Allocation)**
