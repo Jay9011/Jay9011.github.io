@@ -24,7 +24,9 @@ keywords:
 
 [9251번: LCS 문제 바로가기](https://www.acmicpc.net/problem/9251){: target="_blank"}
 
-우선, 지금까지와 같이 동적 프로그래밍 문제를 풀기 전, **최적 부분 구조**와 **중복된 부분 문제**를 알아보도록 하겠습니다.
+<span class="keyword">**동적 계획법(Dynamic Programming, DP)**</span>이란, <span class="font_highlight">**큰 문제를 작은 문제들로 나누어**</span> 풀어나가고 <span class="font_highlight">**작은 문제의 해를 저장**</span>해 다시 계산하지 않고 사용하는 방식입니다.
+
+우선, 동적 계획법 문제는 **최적 부분 구조**와 **중복된 부분 문제**의 두 가지 속성을 가집니다. 이 문제도 **최적 부분 구조**와 **중복된 부분 문제**에 대해 먼저 생각해보겠습니다.
 
 1. **최적 부분 구조**: LCS 문제에서는 <span class="important">**두 문자열의 부분 문자열 간의 LCS를 구하고 결합하여 더 큰 부분 문자열의 LCS를 구하는 식**</span>으로 최적 부분 구조라고 할 수 있습니다.
 <br> 예를 들어, `ACAYKP`와 `CAPCAK`라는 두 문자열의 LCS를 구하려면 다음과 같이 작은 부분 문제부터 시작할 수 있습니다.
