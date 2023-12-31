@@ -7,5 +7,6 @@ User-agent: *
 
 Disallow: /categories
 Disallow: /page
+Disallow: /tags
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
