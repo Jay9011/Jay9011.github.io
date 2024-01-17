@@ -130,7 +130,7 @@ int main()
 }
 ```
 
-![RAII와 스마트포인터_01](https://drive.google.com/uc?export=view&id=1ALnjtaiyx1ehA2yQV7aKby1BGptaGjBs&usp=drive_fs){: w="336" h="146"}
+![RAII와 스마트포인터_01](https://i.postimg.cc/HxXVYxhK/RAII-01.png){: w="336" h="146"}
 
 실제로 자원의 해제는 클래스 템플릿의 소멸자에서 정의한 것이 전부입니다.
 

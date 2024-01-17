@@ -59,7 +59,7 @@ keywords:
 3. **이전 EBP 값(Old EBP)**: 함수 프롤로그(Function Prologue)에서 현재 EBP 값을 저장합니다. 이는 이전 함수의 스택 프레임의 기준점을 나타냅니다.
 4. **지역 변수(Local Variables)**: 함수 내에서만 사용되는 변수들의 값을 저장합니다.
 
-![스택 프레임의 주요 구성 요소](https://drive.google.com/uc?export=view&id=1CM1UbAUvWFqIyjrwyVRh5zZmYYEhBWRt&usp=drive_fs){: w="420" h="400"}
+![스택 프레임의 주요 구성 요소](https://i.postimg.cc/pX9JDQ3M/image.png){: w="420" h="400"}
 
 ---
 
@@ -71,9 +71,9 @@ keywords:
 - **SP (<span class="important">Stack</span> Pointer)**: 다음 데이터의 저장을 위해 **스택 최상단**의 주소를 지시하는 레지스터입니다. 스택의 주소는 높은 값에서 낮은 값으로 할당되기 때문에, ESP가 가리키는 최상단 주소는 낮은 주소값이 됩니다.
 - **BP (<span class="important">Base</span> Pointer)**: 함수 시작시 **현재 함수의 기준 주소**를 가리킵니다. ESP는 그 위치가 수시로 변경되기 때문에, ESP로 지역변수나 매개변수에 접근하기 어려워집니다. 따라서 EBP를 고정하고, EBP 기준으로 값에 접근하는게 쉽기 때문에, **EBP는 함수가 실행되는 도중에는 고정** 값을 가집니다.
 
-![스택프레임 동작 1](https://drive.google.com/uc?export=view&id=1CuHnYayB_qZ45av7qIhapB0nzmqQG-If&usp=drive_fs){: w="700" h="235"}
+![스택프레임 동작 1](https://i.postimg.cc/9QZPkmWx/1.png){: w="700" h="235"}
 
-![스택프레임 동작 2](https://drive.google.com/uc?export=view&id=1D1ZA0kzuK7vA3t3zq9ODA6rSocAkZEC0&usp=drive_fs){: w="700" h="235"}
+![스택프레임 동작 2](https://i.postimg.cc/Fs2gGdQd/2.png){: w="700" h="235"}
 
 이 이미지에서 ESP는 스택의 아래(높은 주소)로 이동할 뿐, **실제로 데이터가 지워지는 것은 아닙니다**. 다만, 사용하지 않는 **무효한 값**이 될 뿐입니다.
 

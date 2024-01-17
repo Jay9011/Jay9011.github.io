@@ -36,7 +36,7 @@ C++ 11에서 **우측 값 참조(rvalue reference)**와 **이동 시멘틱(move 
 
 우선, MSDN 에서는 값 범주간의 관계를 보여주는 다이어그램을 이렇게 표현했습니다.
 
-![값 범주](https://drive.google.com/uc?export=view&id=1BYv-eIgDYbkUkR88Oe-MOUwhM7lxnr29&usp=drive_fs){: w="400" h="333"}
+![값 범주](https://i.postimg.cc/LXbmLMZS/image.png){: w="400" h="333"}
 
 여기에서 <span class="keyword">**glvalue**(Generalized LValue)</span>는 <span class="keyword">**lvalue**(Left Value, Locator Value)</span>와 <span class="keyword">**xvalue**(eXpiring Value)</span>를 합해서 말하고, 
 
@@ -51,7 +51,7 @@ lvalue와 prvalue는 이전에 설명한 글을 참조하면 되지만, lvalue�
     하지만, lvalue는 표현식을 벗어나도 다시 참조할 수 있기 때문에 그대로 rvalue 참조에 바인딩 하지 못합니다.
 - <span class="keyword">**prvalue**</span> : **표현식을 벗어나면 다시 사용할 수 없는 값**을 말합니다. 다른 말로는 identity를 가지지 않는다고 하는데, 간단히 말해 메모리 주소를 가지지 않는 값을 말합니다.
 
-![lvalue는 rvalue 참조에 바로 바인딩 하지 못한다.](https://drive.google.com/uc?export=view&id=1BQStd3V_v10PxfK95khtNSedCq5nVMAY&usp=drive_fs){: w="680" h="148"}
+![lvalue는 rvalue 참조에 바로 바인딩 하지 못한다.](https://i.postimg.cc/RhWVD0zq/lvalue-rvalue.png){: w="680" h="148"}
 _lvalue는 rvalue 참조에 바로 바인딩 하지 못한다._
 
 ## 새로 추가된 xvalue(eXpiring Value)

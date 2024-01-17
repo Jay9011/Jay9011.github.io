@@ -51,7 +51,7 @@ int main()
 예를 들어, 기존 C++ 스타일로 메모리를 관리하다보면 `delete` 이후에 `nullptr` 로 초기화 시켜주지 않은 경우 메모리 주소가 그대로 남게 됩니다.<br>
 스마트 포인터는 **메모리 직접 해제하지 않기 때문에 이러한 메모리 접근 문제를 최소화** 시킬 수 있습니다.
 
-![포인터 예외](https://drive.google.com/uc?export=view&id=1A692qQ9W-YKcHff2S91mf5fAtWLEot8L&usp=drive_fs){: w="700" h="308"}
+![포인터 예외](https://i.postimg.cc/c1kVxmfp/포인터_예외.png){: w="700" h="308"}
 
 ---
 
@@ -110,7 +110,7 @@ std::cout << ptr3.use_count() << std::endl;
 std::cout << ptr4.use_count() << std::endl;
 ```
 
-![SharedPtr](https://drive.google.com/uc?export=view&id=1A8Zl9ygyh3ELm8MKMCTwbCR7ieKdTB1C&usp=drive_fs){: w="323" h="131"}
+![SharedPtr](https://i.postimg.cc/D0hm8hVz/Shared-Ptr.png){: w="323" h="131"}
 
 기본적으로는 C++14 이후 스타일이 권장됩니다.
 
@@ -159,7 +159,7 @@ int main()
 }
 ```
 
-![SharedPtr1](https://drive.google.com/uc?export=view&id=1A9UvNeyTSWTEk9lHSVnlneQHxlpBvtS9&usp=drive_fs){: w="331" h="96"}
+![SharedPtr1](https://i.postimg.cc/mkSk9nRy/Shared-Ptr1.png){: w="331" h="96"}
 
 즉, **`test()`** 함수가 종료되어도 두 객체의 참조 카운트는 1로 남고, **`shared_ptr`**의 참조 카운트가 0이 되지 않기 때문에 메모리 누수가 발생하게 됩니다.
 
@@ -235,7 +235,7 @@ int main()
 }
 ```
 
-![WeakPtr](https://drive.google.com/uc?export=view&id=1A9gdSIwwOvD-JUdgx-9r9rjzaiIh8Isx&usp=drive_fs){: w="390" h="119"}
+![WeakPtr](https://i.postimg.cc/G3PH64YT/WeakPtr.png){: w="390" h="119"}
 
 ---
 

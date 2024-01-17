@@ -35,13 +35,13 @@ C++에서 “값 범주”라고도 불리는 이 <span class="keyword">**L-Valu
 
 우선, 아래 표현식을 보겠습니다.
 
-![lvalue](https://drive.google.com/uc?export=view&id=12Y5wt-mZrX5PZrmjFuIX616PSFa1ihZh&usp=drive_fs){: w="244" h="139"}
+![lvalue](https://i.postimg.cc/cLw6W6tn/lvalue01.png){: w="244" h="139"}
 
 여기에서 `a`가 <span class="keyword">**L-Value**</span> 입니다. 이때, int는 자료형일 뿐이고 int a가 L-Value가 아니라 a가 L-Value인 겁니다.
 
 좀 더 이해하기 쉽게 보충하자면, `a = 20;`에서 `a`가 <span class="keyword">**L-Value**</span> 입니다. 즉, a라는 값의 메모리 주소를 참조할 수 있기 때문에 L-Value라는 **값 범주**에 해당합니다.
 
-![lvalue 참조](https://drive.google.com/uc?export=view&id=13mUYH7q_IMIcKyoRUJ4q-oj8FrtBcDHC&usp=drive_fs){: w="208" h="192"}
+![lvalue 참조](https://i.postimg.cc/zfNvG5TP/lvalue02.png){: w="208" h="192"}
 
 ---
 
@@ -55,15 +55,15 @@ C++에서 “값 범주”라고도 불리는 이 <span class="keyword">**L-Valu
 
 따라서, 우선 “이동”이라는 용어를 사용하지 않고 R-Value를 이해해 보도록 하겠습니다.
 
-![rvalue](https://drive.google.com/uc?export=view&id=12rkaeU_2ddi2wGclqQf7f6la4tv32bAG&usp=drive_fs){: w="262" h="138"}
+![rvalue](https://i.postimg.cc/QxWdgVby/rvalue01.png){: w="262" h="138"}
 
 이 식에서 <span class="keyword">**R-Value**</span>는 당연히 `10` 입니다. `10`은 **정수형 리터럴**이고, 이 표현식을 벗어나면 이 `10` 자체를 다시 사용할 수 없습니다.
 
-![rvalue 구분](https://drive.google.com/uc?export=view&id=16We_-QV9EbDtV6qUTk_SS3cBUOs-NJk_&usp=drive_fs){: w="331" h="167"}
+![rvalue 구분](https://i.postimg.cc/NjqfdYCf/rvalue02.png){: w="331" h="167"}
 
 이 두 표현식에서 두 `10`은 모두 <span class="keyword">**R-Value**</span> 지만, **10 자체를 재사용 한 것으로 볼 수 없습니다**. 실제로 10이라는 리터럴은 메모리에 위치한걸 가져온게 아니라 **10 그 자체를 대입한 것**이기 때문입니다.
 
-![rvalue 리터럴의 어셈블리코드](https://drive.google.com/uc?export=view&id=14OOhTn8LhQtPGUvYEkHJM2_aDqwRy7tM&usp=drive_fs){: w="581" h="130"}
+![rvalue 리터럴의 어셈블리코드](https://i.postimg.cc/W3b40nWG/Rvalue.png){: w="581" h="130"}
 
 이 두 표현식에서 `0Ah`는 **10을 16진수로 표현한 값**입니다. 따라서 두 10은 논리적으로는 같은 값이지만, <span class="font_highlight">**하나의 표현식에서 그 당시에만 유효한 값으로 해당 표현식을 벗어나면 다시 사용하지 못한 값**</span>입니다.
 
@@ -94,7 +94,7 @@ int main()
 
 따라서 아래처럼 사용하려고 하면 다음과 같은 오류를 출력합니다.
 
-![rvalue를 lvalue처럼 쓰면](https://drive.google.com/uc?export=view&id=13jXhs64I-KXa_ZtVB4F82HyQZYUBqBRv&usp=drive_fs){: w="343" h="146"}
+![rvalue를 lvalue처럼 쓰면](https://i.postimg.cc/LsVXq7T4/rvalue-01.png){: w="343" h="146"}
 
 ## 2. 배열 요소
 
@@ -136,7 +136,7 @@ L-Value를 대입연산자 왼쪽에 오는 것이고, R-Value를 대입연산�
 
 디스어셈블리로 확인하면, 참조로 주소 값을 얻어온 후 해당 주소를 역참조 해 대입하는 모습을 볼 수 있습니다.
 
-![포인터 역참조의 값 대입](https://drive.google.com/uc?export=view&id=13Smx0CuNZ4UegGZwNkleB5bUiRwto_ur&usp=drive_fs){: w="600" h="215"}
+![포인터 역참조의 값 대입](https://i.postimg.cc/x1vj77BG/rvalue-02.png){: w="600" h="215"}
 
 `*ptr = 30;`부분을 보면 `ptr` 변수를 참조해 64비트 주소(rax)를 가져오고, 이를 역참조해 30을 저장하고 있습니다. 즉, 역참조 자체는 메모리를 사용하는 <span class="keyword">**L-Value**</span>로 봅니다.
 
@@ -174,7 +174,7 @@ int* p = arr; // int arr[5]
 
 결과부터 말씀 드리자면, 배열의 이름은 주소로 사용되는 R-Value 입니다.
 
-![배열의 이름은 rvalue](https://drive.google.com/uc?export=view&id=1AexBnmxuR_1GIGrhSpZzZ8S5MN7kHrA_&usp=drive_fs){: w="574" h="89"}
+![배열의 이름은 rvalue](https://i.postimg.cc/JhKr7XrG/rvalue.png){: w="574" h="89"}
 
 디스어셈블리로 보면, arr 이라는 변수의 주소를 lea로 연산해 가져오는 것을 볼 수 있습니다.
 
@@ -284,7 +284,7 @@ int main()
 }
 ```
 
-![참조를 반환하는 함수와 포인터를 반환하는 함수 결과](https://drive.google.com/uc?export=view&id=1AlnL74hRF_jItKkEaXwhoiaTywP5gFN9&usp=drive_fs){: w="285" h="89"}
+![참조를 반환하는 함수와 포인터를 반환하는 함수 결과](https://i.postimg.cc/jjqWhtCn/image.png){: w="285" h="89"}
 
 ## 7. 정리 및 나머지 종류
 

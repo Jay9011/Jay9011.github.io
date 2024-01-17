@@ -23,7 +23,7 @@ vector를 사용하다 보면 다음과 같은 에러를 한 번씩은 봤을 �
 
 `erase()`를 쓰거나 `insert()`를 쓰다 보면 가끔 **invalidated iterator**라는 표현이 나옵니다.
 
-![Expression: can’t increment invalidated vector iterator](https://drive.google.com/uc?export=view&id=1DFPgRwGGoZVoLhjnVhQ4f_BMgyvSK-4z&usp=drive_fs){: w="412" h="328"}
+![Expression: can’t increment invalidated vector iterator](https://i.postimg.cc/y6fk7wQ7/image.png){: w="412" h="328"}
 _Expression: can’t increment invalidated vector iterator_
 
 만약, 본 적 없다면, 이미 알고 잘 쓰고 계시거나 논리적으로 문제가 생길 것 같은 작업을 잘 피해 오셨을 것으로 생각됩니다.
@@ -130,7 +130,7 @@ for (; vi != vec.end(); vi++)
 
 삭제된 요소 이후의 모든 요소들이 앞으로 이동하고 총 **size**가 줄어들게 됩니다. (vector와 같은 경우 **capacity**를 줄이지 않습니다.)
 
-![lsit_erase.webp](https://drive.google.com/uc?export=view&id=1DIm9wk3WoNfyaGBzfS-WJM2GiLYQdlu5&usp=drive_fs){: w="1000" h="315"}
+![lsit_erase.webp](https://i.postimg.cc/yYtxZ0C5/02.webp){: w="1000" h="315"}
 
 물론, 삭제될 요소를 가리키던 Iterator는 무효화 되고, 새로운 요소를 가리키는 Iterator를 반환하지만, 지금 여기에서 포인트는 가리키던 요소가 **삭제된 요소 바로 다음 요소를 가리키는 이터레이터**라는 점입니다.
 
@@ -148,7 +148,7 @@ for (; vi != vec.end(); vi++)
 }
 ```
 
-![Untitled](https://drive.google.com/uc?export=view&id=1DKBXvbArk2fDHKhbvLkT7c-ZNL74g9j7&usp=drive_fs){: w="114" h="31"}
+![Untitled](https://i.postimg.cc/c4r6CX2w/03.png){: w="114" h="31"}
 
 만약, 이런 형태(3, 3 이 연속된 형태)의 자료를 반복문에 써본다고 한다면 바로 알 수 있겠지만, `erase()` **이후 증감문이 실행되면서 검사 할 요소를 하나 건너뛰게 됩니다**.
 
@@ -172,7 +172,7 @@ for (; vi != vec.end();)
 }
 ```
 
-![Untitled](https://drive.google.com/uc?export=view&id=1DS2SC8bLgdrPuSYL19xNT60yKFKkTZrT&usp=drive_fs){: w="113" h="39"}
+![Untitled](https://i.postimg.cc/9Q9MtzWf/05.png){: w="113" h="39"}
 
 과연, 요소를 삭제할 때마다 이런 식으로 이터레이터 무효화와 이터레이터의 특징을 생각해 가며 프로그래밍해야 할까요?
 
@@ -188,7 +188,7 @@ STL의 알고리즘에는 `remove()` 및 `remove_if()`라는 알고리즘이 존
 
 그 이후 제거되지 않은 요소들의 새로운 끝(**제거하고자 하는 요소들의 시작**) 부분을 가리키는 이터레이터를 반환합니다.
 
-![Untitled](https://drive.google.com/uc?export=view&id=12_bm6w9sTqhrKSYhfkDz03ShMSmKk-Ly&usp=drive_fs){: w="1000" h="360"}
+![Untitled](https://i.postimg.cc/GpJmVNTw/04.png){: w="1000" h="360"}
 
 이런 식으로 동작하는 이유는 STL의 알고리즘이기 때문에 모든 컨테이너에서 동작할 수 있도록 일반적이면서도 안전한 동작을 해야 하기 때문입니다.
 
@@ -213,7 +213,7 @@ std::vector<int>::iterator vi = vec.begin();
 vec.erase(remove(vec.begin(), vec.end(), 3), vec.end());
 ```
 
-![Untitled](https://drive.google.com/uc?export=view&id=1DS2SC8bLgdrPuSYL19xNT60yKFKkTZrT&usp=drive_fs){: w="113" h="39"}
+![Untitled](https://i.postimg.cc/9Q9MtzWf/05.png){: w="113" h="39"}
 
 `remove()` 알고리즘으로 삭제하고자 하는 요소들을 맨 뒤에 모아두고,
 

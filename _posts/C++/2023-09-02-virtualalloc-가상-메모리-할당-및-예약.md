@@ -110,7 +110,7 @@ SSD도 섹터를 사용하며, 섹터 크기는 기술과 제품에 따라 다�
 
 위에서 가상 메모리는 페이지로 관리되고, 페이지 테이블을 통해 물리적 메모리 주소와 매핑된다고 설명 드렸습니다.
 
-![페이징_페이지 테이블.png](https://drive.google.com/uc?export=view&id=1-Vvz8mWEqcxOoE1rhBCGjdg0Y3BW0mcO&usp=drive_fs){: w="500" h="294"}
+![페이징_페이지 테이블.png](https://i.postimg.cc/4dNznppM/image.png){: w="500" h="294"}
 _가상 메모리 주소를 실제 물리 메모리 주소로 매핑_
 
 만약, **연속된 할당으로 물리 메모리에 할당하게 된다면, 0번 메모리 공간이나 3번 메모리 공간에 해당 공간보다 더 큰 메모리를 할당할 수 없게 될 것**입니다.
@@ -119,7 +119,7 @@ _가상 메모리 주소를 실제 물리 메모리 주소로 매핑_
 
 하지만, 이를 페이지로 관리하게 된다면 이 공간을 최대한 활용할 수 있게 됩니다.
 
-![페이징_단편화 해결.png](https://drive.google.com/uc?export=view&id=15n7A1YfqIdh48-D5SAXluFhvk23viUtg&usp=drive_fs){: w="500" h="334"}
+![페이징_단편화 해결.png](https://i.postimg.cc/j5gyfCXj/image.png){: w="500" h="334"}
 
 이런식으로 프로그램이 실행되면서 필요한 메모리를 페이지 단위로 할당하고 해제함으로써 메모리의 낭비를 줄이고 관리를 용이하게 합니다.
 

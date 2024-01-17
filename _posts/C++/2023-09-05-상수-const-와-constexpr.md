@@ -152,7 +152,7 @@ int main()
 }
 ```
 
-![constexpr의 특이한 사용](https://drive.google.com/uc?export=view&id=19tW8XNgfJewhVp-cIXruD3tlpU3f4RgN&usp=drive_fs){: w="324" h="139"}
+![constexpr의 특이한 사용](https://i.postimg.cc/cC3MN0R4/constexpr.png){: w="324" h="139"}
 
 ---
 
@@ -204,4 +204,4 @@ int main()
 }
 ```
 
-![constexpr의 특이한 사용2](https://drive.google.com/uc?export=view&id=19uuvrLF8XhnPRR3qDfKt4Exm3M2li4Ap&usp=drive_fs){: w="325" h="321"}
+![constexpr의 특이한 사용2](https://i.postimg.cc/m2xyy14c/constexpr-2.png){: w="325" h="321"}

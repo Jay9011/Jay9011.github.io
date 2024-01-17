@@ -50,7 +50,7 @@ BSS에는 초기 값이 없는 전역 변수를 할당하며, DATA에는 초기 
 
 # 오버플로우와 언더플로우
 
-![메모리 할당](https://drive.google.com/uc?export=view&id=16igdLjUKWu7og0uBQrBE31KzISIH4L4G&usp=drive_fs){: w="435" h="470"}
+![메모리 할당](https://i.postimg.cc/vTTL25B9/image.png){: w="435" h="470"}
 
 - **스택 오버플로우**는 함수 호출과 지역 변수 할당 등으로 인해 스택 메모리가 너무 많이 사용되어 <span class="important">스택 영역의 한계를 넘어서려 할 때 발생</span>합니다. 이럴 때는 프로그램이 비정상적으로 종료될 수 있습니다.
 - **스택 언더플로우**는 반대로 <span class="important">스택에서 더 이상 꺼낼 데이터가 없는데도 불구하고 데이터를 꺼내려 할 때 발생</span>합니다. 이것은 일반적으로 프로그램의 로직 오류로 인해 발생하는 경우가 많습니다.

@@ -34,7 +34,7 @@ keywords:
 
 먼저, <span class="keyword">**이동**</span>에 대해서 찾다 보면 다음과 같은 설명을 볼 수 있습니다.
 
-![복사와 이동](https://drive.google.com/uc?export=view&id=12JO2J_ubCnOe_jMha5zpyZMiPz86bFqb&usp=drive_fs){: w="500" h="339"}
+![복사와 이동](https://i.postimg.cc/mk1BS6QH/image.png){: w="500" h="339"}
 
 <span class="important">**복사**</span>의 경우 **데이터를 복사하고 새로운 객체에 새롭게 생성된 데이터를 가리키**게 하고, 
 
@@ -85,7 +85,7 @@ int main()
 
 그래서 **임시 객체**인 `MyCharacter()`를 `vector`에 `push_back()`해준다면 어떤 문제가 발생할까요?
 
-![얕은 복사 문제](https://drive.google.com/uc?export=view&id=1AsvJRgtfWzq23iAcDWoNubgQtA7uRBLX&usp=drive_fs){: w="317" h="127"}
+![얕은 복사 문제](https://i.postimg.cc/05hw1TXh/image.png){: w="317" h="127"}
 
 위의 경우에는 이미 소멸자가 호출되어 실제 데이터를 출력하지 못하고 소멸됩니다.
 
@@ -114,7 +114,7 @@ MyCharacter(const MyCharacter& other)
 }
 ```
 
-![깊은 복사 결과](https://drive.google.com/uc?export=view&id=1AuNdGLHu70muiXzh3PSO0_QyPcgkcOgw&usp=drive_fs){: w="326" h="153"}
+![깊은 복사 결과](https://i.postimg.cc/TwwRKP1Q/image.png){: w="326" h="153"}
 
 위 코드는 복사 생성자를 재정의 해서 깊은 복사를 하는 코드입니다.
 
@@ -122,7 +122,7 @@ MyCharacter(const MyCharacter& other)
 
 이는 위 이미지에서 copy의 동작과 같습니다.
 
-![복사 동작](https://drive.google.com/uc?export=view&id=15KdU-LjSp6_QoCbNEMNuaBKFxXTYTOi9&usp=drive_fs){: w="465" h="75"}
+![복사 동작](https://i.postimg.cc/pyNxcYZ1/image.png){: w="465" h="75"}
 
 ## 이동의 필요성을 느끼다
 
@@ -157,10 +157,10 @@ MyCharacter(MyCharacter&& other) noexcept
 }
 ```
 
-![이동 후 결과](https://drive.google.com/uc?export=view&id=1B4aCTQOuk9VZLU8VNwIxl4InREIuFNGi&usp=drive_fs){: w="332" h="154"}
+![이동 후 결과](https://i.postimg.cc/vZsxcWsz/image.png){: w="332" h="154"}
 _임시 객체의 경우 nullptr로 이미 소멸되었지만, 이후 소멸자에서는 처음 생성한 객체의 주소가 그대로 이동되었다._
 
-![이동 동작](https://drive.google.com/uc?export=view&id=1257WmjtEDlwARdzvDzxMdLDiAxYJmFNS&usp=drive_fs){: w="469" h="80"}
+![이동 동작](https://i.postimg.cc/MZnQ465y/image.png){: w="469" h="80"}
 
 위 코드는 **이동 생성자를 호출**하고, 동적 할당된 원본 데이터를 망가트리지 않으면서, 큰 데이터의 경우 **복사 비용 없이 빠르게 데이터를 옮겨 줄 수 있습니다.**
 
@@ -175,7 +175,7 @@ _임시 객체의 경우 nullptr로 이미 소멸되었지만, 이후 소멸자�
 
 사실, nullptr을 지정해주는 부분을 빼면 다음과 같은 문제가 또 발생하게 됩니다.
 
-![자동으로 이동하지 않는 모습](https://drive.google.com/uc?export=view&id=1B6e1pcoAZigjD53Odbr05WpBgvvI1L5q&usp=drive_fs){: w="327" h="144"}
+![자동으로 이동하지 않는 모습](https://i.postimg.cc/rphDn3tn/image.png){: w="327" h="144"}
 _이동 생성자로 이동했음에도 동적 할당된 메모리가 그대로 소멸되었다..._
 
 분명히 이동 생성자가 호출되었는데에도, 임시 객체가 소멸될 때, 얕은 복사와 같은 문제가 발생합니다.
@@ -219,7 +219,7 @@ int main()
 }
 ```
 
-![const lvale 참조 매개변수를 호출](https://drive.google.com/uc?export=view&id=1BKJTgboy2V-FGo9FzNtMWjZ0yUOsQJ7X&usp=drive_fs){: w="313" h="117"}
+![const lvale 참조 매개변수를 호출](https://i.postimg.cc/wTJsqwSM/image.png){: w="313" h="117"}
 
 만약, rvalue 참조가 없다면 다음과 같이 rvalue는 `const int&` 형태의 시그니처를 가진 함수를 호출하게 됩니다.
 
@@ -283,7 +283,7 @@ int main()
 }
 ```
 
-![rvalue 참조를 호출하는 모습](https://drive.google.com/uc?export=view&id=1BKyJKqE0V56-s-d5xOXfHtajTRz0GTqF&usp=drive_fs){: w="313" h="117"}
+![rvalue 참조를 호출하는 모습](https://i.postimg.cc/y8yg9k6z/2.png){: w="313" h="117"}
 
 ## 우측 값 참조의 다양한 사용법
 
@@ -326,7 +326,7 @@ int main()
 
 하지만, 만약 **좌측 값(lvalue)를 이동 시키고 싶다면** 어떨까요?
 
-![lvalue는 rvalue 참조 타입에 바인딩 되지 않는다.](https://drive.google.com/uc?export=view&id=1BQStd3V_v10PxfK95khtNSedCq5nVMAY&usp=drive_fs)
+![lvalue는 rvalue 참조 타입에 바인딩 되지 않는다.](https://i.postimg.cc/RhWVD0zq/lvalue-rvalue.png)
 _lvalue는 rvalue 참조 타입에 바인딩 되지 않는다._
 
 ## lvalue를 rvalue처럼 쓸 수 있게 해주는 함수 std::move()
@@ -359,14 +359,14 @@ int main()
 
 ## 우측 값 참조는 사실 lvalue 이다?
 
-C++에서 <span class="keyword">**rvalue 참조(&&)**</span>는 이동 시맨틱을 가능하게 하기 위한 것이며, 사실 <span class="font_highlight">**rvalue 참조 변수 자체는 lvalue**</span>입니다.
+C++에서 <span class="keyword">**rvalue 참조(&&)**</span>는 이동 시맨틱을 가능하게 하기 위한 것이며, 사실 <span class="font_highlight">**rvalue 참조된 변수는 lvalue**</span>입니다.
 
 lvalue와 rvalue에 대한 정보는 [[L_Value & R_Value] 1. 기본적인 L-Value와 R-Value 구분하기](/posts/l_value-&-r_value-1.-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-l-value%EC%99%80-r-value-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/){: target="_blank"} 에서 볼 수 있으며
 
 여기에서, 주소가 있고 참조가 가능한 것은 lvalue입니다.
 
-![Untitled](https://drive.google.com/uc?export=view&id=1BRx4unhog_ZIDTiEMdLDyWN_q7eE8h1p&usp=drive_fs){: w="853" h="188"}
-_rvalue 참조 매개변수를 rvalue 참조 변수에 담으려 하면 lvalue로 인한 바인딩 문제가 발생한다._
+![Untitled](https://i.postimg.cc/mDXgjHJ0/rvalue-rvalue-lvalue.png){: w="853" h="188"}
+_rvalue 참조 매개변수 x를 rvalue 참조 변수에 담으려 하면 x가 lvalue로 인식되어 바인딩 문제가 발생한다._
 
 만약, 아래와 같은 코드로 바꿔본다면, x와 y는 각각의 주소가 있고 참조를 할 수 있다는 사실을 알 수 있습니다.
 
@@ -380,11 +380,18 @@ void mySwap(MyCharacter&& x, MyCharacter&& y)
 }
 ```
 
-즉, rvalue 참조는 rvalue 로만 오버로딩 되고, 대입이 되지만, 변수로 사용되는 rvalue 참조 자체는 lvalue 라는 것입니다.
+왜 이렇게 되냐면, rvalue 참조 매개변수는 함수 내부에서 이름을 가지기 때문입니다.
+
+즉, 함수의 매개변수로 rvalue 참조가 전달되면, 그 매개변수는 함수 내부에서 자동으로 lvalue가 됩니다.
+
+또한, tmp는 rvalue 참조로 선언되었지만, 표현식을 벗어나면, 이름이 있는 변수이므로 lvalue로 취급됩니다
+
+즉, `y = tmp;`에서 tmp는 lvalue로 취급됩니다.
+
 
 ## 우측 값 참조와 std::move()를 사용해서 값 이동 시키기
 
-따라서, 아래와 같이 코드를 수정하면 lvalue인 rvalue 참조를 다시 rvalue로 만들면서 rvalue 참조를 통해 이동 시멘틱을 구현할 수 있습니다.
+따라서, 아래와 같이 코드를 수정하면 lvalue인 rvalue 참조를 다시 rvalue로 캐스팅 하면서 rvalue 참조를 통해 이동 시멘틱을 구현할 수 있습니다.
 
 ```cpp
 class MyCharacter
@@ -426,7 +433,7 @@ void mySwap(MyCharacter&& x, MyCharacter&& y)
 {
 	MyCharacter&& tmp = std::move(x);
 	x = std::move(y);
-	y = std::move(tmp);
+	y = std::move(tmp); // tmp 또한 이후 lvalue로 취급되기 때문에 move를 사용한다.
 }
 ```
 
@@ -434,7 +441,7 @@ void mySwap(MyCharacter&& x, MyCharacter&& y)
 
 tmp를 “참조”로 사용해버렸기에 생기는 문제입니다.
 
-![Untitled](https://drive.google.com/uc?export=view&id=1BTKT-7_5qtKKm2PYATl6uIO2aTeZyNyt&usp=drive_fs){: w="383" h="211"}
+![Untitled](https://i.postimg.cc/nrNcbtH2/rvalue.png){: w="383" h="211"}
 _rvalue 참조는 참조 타입이다._
 
 위 코드대로 하면, 이동 대입 연산자를 호출하지만, 
@@ -466,7 +473,7 @@ int main()
 }
 ```
 
-![rvalue참조와 move로 이동](https://drive.google.com/uc?export=view&id=1BYp6tCgK4I8UWkqCmNwiybm1KM8KjXsE&usp=drive_fs){: w="382" h="201"}
+![rvalue참조와 move로 이동](https://i.postimg.cc/3w3rH1Hs/rvalue-move-02.png){: w="382" h="201"}
 
 ---
 

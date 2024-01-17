@@ -60,7 +60,7 @@ int main()
 }
 ```
 
-![callByValue](https://drive.google.com/uc?export=view&id=1AMPZHe5OVvPB3Or_4kywmtWGqsrKjpHU&usp=drive_fs){: w="315" h="90"}
+![callByValue](https://i.postimg.cc/d0W92WQv/callBy01.png){: w="315" h="90"}
 
 ---
 
@@ -98,7 +98,7 @@ int main()
 }
 ```
 
-![callByAddress](https://drive.google.com/uc?export=view&id=1AQJWRnuCCogo2_fRmyWytq1GddUz_Quc&usp=drive_fs){: w="320" h="96"}
+![callByAddress](https://i.postimg.cc/T3J0wdZK/callBy02.png){: w="320" h="96"}
 
 ---
 
@@ -141,7 +141,7 @@ int main()
 }
 ```
 
-![CallbyReference](https://drive.google.com/uc?export=view&id=1AQrce0HpkNftkcKTR4IZl-C8MT_AFHrs&usp=drive_fs){: w="316" h="92"}
+![CallbyReference](https://i.postimg.cc/mgsVBz6x/callBy03.png){: w="316" h="92"}
 
 ---
 
@@ -175,7 +175,7 @@ int main()
 }
 ```
 
-![포인터와 참조의 주소](https://drive.google.com/uc?export=view&id=1ATl7Z7tj6ZlPS_TQDBF2Yrda3wFq6d4w&usp=drive_fs){: w="380" h="179"}
+![포인터와 참조의 주소](https://i.postimg.cc/qRzxj8gK/callBy04.png){: w="380" h="179"}
 
 메인 주소와 참조 주소, 포인터가 가지고 있는 주소는 같지만, 포인터 자체의 주소는 다릅니다.
 
@@ -195,7 +195,7 @@ int main()
 
 그러나 디스어셈블리의 결과를 보면 조금 달라 보이기도 합니다.
 
-![callByAddressAndReference.png](https://drive.google.com/uc?export=view&id=15D-rLt1Zv33phJ-SoXXrmZh_xNiax0wd&usp=drive_fs){: w="1716" h="581"}
+![callByAddressAndReference.png](https://i.postimg.cc/CxSCWyzS/call-By-Address-And-Reference.png){: w="1716" h="581"}
 
 <span class="keyword">**callByAddress**</span>의 `lea rdx,[a]` 명령어는 “Load Effective Address”의 약자로, 이 명령어는 실제 데이터를 로드하는 것이 아니라 주소 자체를 로드합니다. 즉, [a]의 주소를 rdx 레지스터에 저장합니다.
 
@@ -207,13 +207,13 @@ int main()
 
 하지만, 실제 값을 사용하는 부분을 보면 두 동작의 차이가 없음을 알 수 있습니다.
 
-![callByAddressAndReference2.png](https://drive.google.com/uc?export=view&id=16l_ZNQzvseSh7rGnREqykQN_Qxbxis2F&usp=drive_fs){: w="1716" h="581"}
+![callByAddressAndReference2.png](https://i.postimg.cc/sXk7mqkF/call-By-Address-And-Reference2.png){: w="1716" h="581"}
 
 <span class="keyword">**callByAddress**</span>에서 원본 주소를 가리키는 것과 <span class="keyword">**callByReference**</span>에서 원본 주소를 가리키는 코드는 C++에서는 달라 보이지만, 로우 레벨(어셈블리)에서는 같은 것을 확인할 수 있습니다.
 
 실제 데이터를 조작하는 부분을 보더라도 로우 레벨(어셈블리) 코드는 같은 것을 확인할 수 있습니다.
 
-![callByAddressAndReference3.png](https://drive.google.com/uc?export=view&id=14v0TE6cyn5lHKugdakh6f6WSGyuRr9J2&usp=drive_fs){: w="1160" h="94"}
+![callByAddressAndReference3.png](https://i.postimg.cc/C1XHtzfQ/call-By-Address-And-Reference3.png){: w="1160" h="94"}
 
 ## 결론
 

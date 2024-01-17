@@ -41,7 +41,7 @@ keywords:
 
 <span class="keyword">**cdecl(C Declaration)**</span>은 주로 C언어에서 사용하는 방식으로, **<span class="font_highlight">Caller(호출자)</span>에서 스택을 정리**하는 방식입니다.
 
-![push를 통해 매개변수를 전달하고, add를 동해 esp를 옮겨 매개변수를 정리하는 모습](https://drive.google.com/uc?export=view&id=10D8vDKZeZn7qGOC4ETflMQdndoQ7lLgD&usp=drive_fs){: w="517" h="177"}
+![push를 통해 매개변수를 전달하고, add를 동해 esp를 옮겨 매개변수를 정리하는 모습](https://i.postimg.cc/qRFV5XwH/cdecl.png){: w="517" h="177"}
 _push를 통해 매개변수를 전달하고, add를 동해 esp를 옮겨 매개변수를 정리하는 모습_
 
 visual studio x86에서 실행하게 되면, 위와 같이 push를 통해 두 매개변수를 저장하고, 함수 호출 후, 종료 후에 ESP의 값을 더해주는 모습을 볼 수 있습니다.
@@ -64,10 +64,10 @@ visual studio x86에서 실행하게 되면, 위와 같이 push를 통해 두 �
 
 <span class="keyword">**stdcall(STandard call)**</span>은 **<span class="font_highlight">Callee(피호출자)</span>에서 스택을 정리**하는 방식입니다.
 
-![Caller에서는 push로 매개 변수만 넣어줄 뿐, esp를 조작하는 동작은 안보인다.](https://drive.google.com/uc?export=view&id=10E-vK4_YIfa0RaYq8crxc6hVAw3OcedK&usp=drive_fs){: w="477" h="171"}
+![Caller에서는 push로 매개 변수만 넣어줄 뿐, esp를 조작하는 동작은 안보인다.](https://i.postimg.cc/zf01n1RB/stdcall-01.png){: w="477" h="171"}
 _Caller에서는 push로 매개 변수만 넣어줄 뿐, esp를 조작하는 동작은 안보인다._
 
-![리턴 후 esp를 8만큼 증가시킨다는 의미.](https://drive.google.com/uc?export=view&id=10LpxGu_c64bL77QeQ_ziDjjASUdQ6FZ9&usp=drive_fs){: w="383" h="96"}
+![리턴 후 esp를 8만큼 증가시킨다는 의미.](https://i.postimg.cc/MGWSMGHN/stdcall-02.png){: w="383" h="96"}
 _리턴 후 esp를 8만큼 증가시킨다는 의미._
 
 이전의 `_cdecl`과는 달리 **Caller**에서는 매개 변수만 넣어 줄 뿐, ESP를 조작하는 동작은 보이지 않습니다.

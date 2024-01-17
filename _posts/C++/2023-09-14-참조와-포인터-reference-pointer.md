@@ -193,7 +193,7 @@ int main()
 }
 ```
 
-![NonConst 함수 호출](https://drive.google.com/uc?export=view&id=1A2tlUDIEvYj50EPvtrQbLFeNmk4PQ0NL&usp=drive_fs){: w="333" h="85"}
+![NonConst 함수 호출](https://i.postimg.cc/bNHk06LM/Non-Const.png){: w="333" h="85"}
 
 이와 같이 임시 변수를 참조로 사용하기 위해서는 const와 관련된 상황을 주의해야 합니다.
 

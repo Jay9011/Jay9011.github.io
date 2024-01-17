@@ -67,7 +67,7 @@ LCS는 2차원 배열로 문자열의 각 문자를 저장하고 **공통된 부
 
 예를 들어, 아래에서 `A`를 `CAPCAK`에 대해 검사하고 있는데, `A`와 `P`에서의 1은 `‘A’`와 `‘CAP’` 문자의 LCS 길이입니다. 따라서 `‘A’`와 `‘CA’`로 서로 공통된 부분에서의 길이를 증가시키려면 **두 문자의 바로 앞**인 `‘-’`와 `‘C’`까지 검사한 **LCS의 길이에 1을 더하는 것**입니다.
 
-![LCS_01.png](https://drive.google.com/uc?export=view&id=13y37bNP30aM3vygfecb38cpV1WTb3jDq&usp=drive_fs){: w="434" h="321"}
+![LCS_01.png](https://i.postimg.cc/Dw6QhCXs/LCS-01.png){: w="434" h="321"}
 
 ## 2. AC와 CAPCAK의 LCS 찾기
 
@@ -83,7 +83,7 @@ LCS는 2차원 배열로 문자열의 각 문자를 저장하고 **공통된 부
 
 이때, `[i-1][j]`나 `[i][j-1]`의 **`max`**를 사용해야 하는데, 이는 두 문자열 양쪽에서의 LCS 길이를 유지해야 하기 때문입니다.
 
-![LCS_02.png](https://drive.google.com/uc?export=view&id=12SjLzWLlJjk0dI3Oyc3MsK07ZhpZQhE-&usp=drive_fs){: w="434" h="321"}
+![LCS_02.png](https://i.postimg.cc/8CnhJjwz/LCS-02.png){: w="434" h="321"}
 
 ## 3. 이제 위 과정을 반복합니다.
 
@@ -93,7 +93,7 @@ LCS는 2차원 배열로 문자열의 각 문자를 저장하고 **공통된 부
 
 이는 “CAPCAK”로 “ACAYKP”를 비교하는 것과 “ACAYKP”로 “CAPCAK”를 비교하는 공통된 LCS의 최대 길이를 뜻합니다.
 
-![LCS.webp](https://drive.google.com/uc?export=view&id=1138smr52IgWYPIRtazFFKur7-9ixA0tQ&usp=drive_fs){: w="434" h="321"}
+![LCS.webp](https://i.postimg.cc/Y0Qgs87v/LCS.webp){: w="434" h="321"}
 
 ---
 

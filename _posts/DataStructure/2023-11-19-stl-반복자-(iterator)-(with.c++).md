@@ -164,7 +164,7 @@ int main()
 }
 ```
 
-![임의 접근 이터레이터와 역방향 임의접근 이터레이터](https://drive.google.com/uc?export=view&id=1BeTtWW-P8rjbt3_xgWTj5Rpz1mnzpIHl&usp=drive_fs){: w="140" h="42"}
+![임의 접근 이터레이터와 역방향 임의접근 이터레이터](https://i.postimg.cc/Kzk89zbj/image.png){: w="140" h="42"}
 
 ## 4. 입•출력 스트림 Iterator
 
@@ -195,7 +195,7 @@ int main()
 }
 ```
 
-![입출력 스트림 이터레이터](https://drive.google.com/uc?export=view&id=1BgtlcaVZdA71xtaG8rFc467VSK3fVYaS&usp=drive_fs){: w="219" h="86"}
+![입출력 스트림 이터레이터](https://i.postimg.cc/BvwvcFdR/image.png){: w="219" h="86"}
 
 위 코드는 표준 입력(`cin`)에서 정수를 하나 읽어 `in_it`를 통해 접근하고 `*in_it`를 통해 출력합니다.
 
@@ -229,7 +229,7 @@ int main()
 }
 ```
 
-![삽입 이터레이터](https://drive.google.com/uc?export=view&id=1BhCvyH29_QUd3ThswSBt_0AmA7c3jh0X&usp=drive_fs){: w="85" h="22"}
+![삽입 이터레이터](https://i.postimg.cc/Bvv6Kpwx/image.png){: w="85" h="22"}
 
 ## 6. 상수 Iterator
 

@@ -47,7 +47,7 @@ keywords:
 
 이 과정에서 capacity는 기존 용량의 **약 1.5배에서 2배** 정도로 증가하는 것이 일반적입니다
 
-![capacity와 size](https://drive.google.com/uc?export=view&id=1Bz0IXAgGxBXmZZq_5IdPKzrv5lKJGdiA&usp=drive_fs){: w="690" h="398"}
+![capacity와 size](https://i.postimg.cc/ZnLPqjM1/vector-01.png){: w="690" h="398"}
 
 # 특징
 
@@ -141,7 +141,7 @@ int main()
 }
 ```
 
-![다차원 vector 결과](https://drive.google.com/uc?export=view&id=1BxSPojjY8cld5oucp1N_E929TzroozDi&usp=drive_fs){: w="161" h="145"}
+![다차원 vector 결과](https://i.postimg.cc/sggmMdyK/array-01.png){: w="161" h="145"}
 
 위 코드를 설명하자면, 우선 자료구조 부분은 다차원 배열 array와 마찬가지로 `std::vector<int>`를
 
@@ -266,7 +266,7 @@ v2.emplace_back(1, 2);
 v2.emplace_back(3, 4, 5);
 ```
 
-![emplace_back을 잘못 쓴 경우](https://drive.google.com/uc?export=view&id=1C3dn54F3BXKeAqAqQrLV8IbTtp7qizdn&usp=drive_fs){: w="519" h="76"}
+![emplace_back을 잘못 쓴 경우](https://i.postimg.cc/RZpRfsZm/vector-03.png){: w="519" h="76"}
 
 즉, **<span class="font_highlight">생성자 매개변수의 타입에 맞춰</span> 써야합니다**.
 
@@ -280,7 +280,7 @@ for (auto& elem : v2)
 }
 ```
 
-![정상적으로 emplace_back()을 쓴 결과](https://drive.google.com/uc?export=view&id=1C25LVkbGUlbio1KbkjMyORHXsUaPpeeD&usp=drive_fs){: w="142" h="83"}
+![정상적으로 emplace_back()을 쓴 결과](https://i.postimg.cc/3RmCs3Cr/vector-02.png){: w="142" h="83"}
 _정상적으로 `emplace_back()`을 쓴 결과_
 
 ---
