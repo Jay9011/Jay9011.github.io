@@ -2,21 +2,21 @@
 title: 시퀀스 컨테이너의 삭제와 이터레이터 무효화(erase(), remove())
 date: 2023-12-01 23:10:58 +0900
 categories:
-    - 컴퓨터 과학
-    - 자료구조
+  - 컴퓨터 공학
+  - 자료구조
 tags:
-    - c
-    - 시퀀스 컨테이너
-    - 이터레이터
-    - 자료구조
-    - 메모리
+  - c
+  - 시퀀스 컨테이너
+  - 이터레이터
+  - 자료구조
+  - 메모리
 math: false
 type: DataStructure
 keywords:
-    - iterator invalidation
-    - remove()
-    - 이터레이터 무효화
-    - erase()
+  - iterator invalidation
+  - remove()
+  - 이터레이터 무효화
+  - erase()
 ---
 
 vector를 사용하다 보면 다음과 같은 에러를 한 번씩은 봤을 수 있습니다.

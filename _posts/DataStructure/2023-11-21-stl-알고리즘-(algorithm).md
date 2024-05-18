@@ -2,19 +2,19 @@
 title: STL - 알고리즘 (Algorithm)
 date: 2023-11-21 19:34:59 +0900
 categories:
-    - 컴퓨터 과학
-    - 자료구조
+  - 컴퓨터 공학
+  - 자료구조
 tags:
-    - c
-    - 알고리즘
-    - 자료구조
-    - 이터레이터
+  - c
+  - 알고리즘
+  - 자료구조
+  - 이터레이터
 math: false
 type: DataStructure
 keywords:
-    - Algorithm
-    - STL
-    - 알고리즘
+  - Algorithm
+  - STL
+  - 알고리즘
 ---
 
 STL 알고리즘(Algorithm)은 **데이터를 처리하고 조작하는 데 사용되는 함수 템플릿의 집합**입니다.

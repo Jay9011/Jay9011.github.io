@@ -2,20 +2,20 @@
 title: "[STL] vector"
 date: 2023-11-25 22:21:54 +0900
 categories:
-    - 컴퓨터 과학
-    - 자료구조
+  - 컴퓨터 공학
+  - 자료구조
 tags:
-    - 시퀀스 컨테이너
-    - 자료구조
-    - c
+  - 시퀀스 컨테이너
+  - 자료구조
+  - c
 math: true
 type: DataStructure
 keywords:
-    - push_back
-    - sequence container
-    - vector
-    - 시퀀스 컨테이너
-    - emplace_back
+  - push_back
+  - sequence container
+  - vector
+  - 시퀀스 컨테이너
+  - emplace_back
 ---
 
 # 개요

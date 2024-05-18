@@ -2,7 +2,7 @@
 title: STL - Standard Template Library 란?
 date: 2023-11-16 20:58:39 +0900
 categories:
-  - 컴퓨터 과학
+  - 컴퓨터 공학
   - 자료구조
 tags:
   - 알고리즘

@@ -1,5 +1,5 @@
 ---
-title: Call By Value, Call By Adress, Call By Reference 란?
+title: Call By Value, Call By Address, Call By Reference 란?
 date: 2023-09-19 21:20:43 +0900
 categories:
     - 프로그래밍
@@ -12,7 +12,7 @@ tags:
     - 함수
     - 포인터
 keywords:
-    - Call By Adress
+    - Call By Address
     - Call By Reference
     - Call By Value
     - 함수

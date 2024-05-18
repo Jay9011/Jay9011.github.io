@@ -27,12 +27,12 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
-      <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+      <!-- <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
-      </li>
+      </li> -->
       <!-- category -->
       <li class="nav-item{% if page.url == '/categories/' | relative_url %}{{ " active" }}{% endif %}">
         <a href="{{ '/categories/' | relative_url }}" class="nav-link">
@@ -67,12 +67,12 @@
           </a>
         </li>
       </li>
-      <!-- 컴퓨터 과학 -->
-      <li class="nav-item{% if page.url == '/categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%BC%ED%95%99/' | relative_url %}{{ " active" }}{% endif %}">
-        <a href="{{ '/categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%BC%ED%95%99/' | relative_url }}" class="nav-link" >
+      <!-- 컴퓨터 공학 -->
+      <li class="nav-item{% if page.url == '/categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%B5%ED%95%99/' | relative_url %}{{ " active" }}{% endif %}">
+        <a href="{{ '/categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B3%B5%ED%95%99/' | relative_url }}" class="nav-link" >
           <i class="fa-solid fa-computer"></i>
-          컴퓨터 과학
-          {% assign posts_size = site.categories['컴퓨터 과학'] | size %}
+          컴퓨터 공학
+          {% assign posts_size = site.categories['컴퓨터 공학'] | size %}
           <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
         </a>
         <!-- 자료구조 -->
@@ -93,7 +93,43 @@
             <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
           </a>
         </li>
-      </li>
+        <!-- 디자인 패턴 -->
+        <!-- <li class="nav-item{% if page.url == '/categories/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            디자인 패턴
+            {% assign posts_size = site.categories['디자인 패턴'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li> -->
+        <!-- 소프트웨어 공학 -->
+        <li class="nav-item{% if page.url == '/categories/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B3%B5%ED%95%99/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B3%B5%ED%95%99/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            소프트웨어 공학
+            {% assign posts_size = site.categories['소프트웨어 공학'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li>
+        <!-- 컴퓨터 구조 -->
+        <li class="nav-item{% if page.url == '/categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            컴퓨터 구조
+            {% assign posts_size = site.categories['컴퓨터 구조'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li>
+        <!-- 운영체제 -->
+        <!-- <li class="nav-item{% if page.url == '/categories/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            운영체제
+            {% assign posts_size = site.categories['운영체제'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li>
+      </li> -->
       <!-- archives -->
       <li class="nav-item{% if page.url == '/archives/' | relative_url %}{{ " active" }}{% endif %}">
         <a href="{{ '/archives/' | relative_url }}" class="nav-link">

@@ -2,17 +2,17 @@
 title: STL - 반복자 (Iterator) (with.C++)
 date: 2023-11-19 19:22:52 +0900
 categories:
-    - 컴퓨터 과학
-    - 자료구조
+  - 컴퓨터 공학
+  - 자료구조
 tags:
-    - 자료구조
+  - 자료구조
 math: false
 type: DataStructure
 keywords:
-    - STL
-    - 반복자
-    - 이터레이터
-    - Iterator
+  - STL
+  - 반복자
+  - 이터레이터
+  - Iterator
 ---
 
 반복자, 흔히 <span class="keyword">**이터레이터(Iterator)**</span>라 불리는 이것은 STL(Standard Template Library)에서 매우 중요한 역할을 합니다. 
