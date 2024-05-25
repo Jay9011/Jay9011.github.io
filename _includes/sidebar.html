@@ -130,6 +130,24 @@
           </a>
         </li>
       </li> -->
+      <!-- 기타 -->
+      <li class="nav-item{% if page.url == '/categories/%EA%B8%B0%ED%83%80/' | relative_url %}{{ " active" }}{% endif %}">
+        <a href="{{ '/categories/%EA%B8%B0%ED%83%80/' | relative_url }}" class="nav-link" >
+          <i class="fa-solid fa-book"></i>
+          기타
+          {% assign posts_size = site.categories['기타'] | size %}
+          <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+        </a>
+        <!-- 수학과 물리 -->
+        <li class="nav-item{% if page.url == '/categories/%EC%88%98%ED%95%99%EA%B3%BC-%EB%AC%BC%EB%A6%AC/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/%EC%88%98%ED%95%99%EA%B3%BC-%EB%AC%BC%EB%A6%AC/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            수학과 물리
+            {% assign posts_size = site.categories['수학과 물리'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li>
+      </li>
       <!-- archives -->
       <li class="nav-item{% if page.url == '/archives/' | relative_url %}{{ " active" }}{% endif %}">
         <a href="{{ '/archives/' | relative_url }}" class="nav-link">
