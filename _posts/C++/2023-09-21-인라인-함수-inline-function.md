@@ -2,8 +2,8 @@
 title: 인라인 함수(inline function)
 date: 2023-09-21 21:56:33 +0900
 categories:
-  - C++
   - 풀스택 개발
+  - C++
 tags:
   - c
   - inline

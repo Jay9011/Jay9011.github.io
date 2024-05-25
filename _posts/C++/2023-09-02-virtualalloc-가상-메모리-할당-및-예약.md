@@ -2,8 +2,8 @@
 title: VirtualAlloc (가상 메모리 할당 및 예약)
 date: 2023-09-02 17:36:19 +0900
 categories:
-  - C++
   - 풀스택 개발
+  - C++
 tags:
   - c
   - 동적

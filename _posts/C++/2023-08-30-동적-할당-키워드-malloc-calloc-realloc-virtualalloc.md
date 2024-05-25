@@ -2,8 +2,8 @@
 title: 동적 할당 키워드 (new, malloc, calloc, realloc, virtualAlloc)
 date: 2023-08-30 20:18:53 +0900
 categories:
-  - C++
   - 풀스택 개발
+  - C++
 tags:
   - c
   - 데이터

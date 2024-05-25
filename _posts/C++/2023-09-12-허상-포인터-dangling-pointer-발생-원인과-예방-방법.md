@@ -2,8 +2,8 @@
 title: 허상 포인터 (Dangling pointer) 발생 원인과 예방 방법
 date: 2023-09-12 17:49:30 +0900
 categories:
-  - C++
   - 풀스택 개발
+  - C++
 tags:
   - c
   - 포인터

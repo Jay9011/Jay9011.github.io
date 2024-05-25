@@ -2,8 +2,8 @@
 title: (상수) const 와 constexpr
 date: 2023-09-05 22:06:42 +0900
 categories:
-  - C++
   - 풀스택 개발
+  - C++
 tags:
   - c
   - const
