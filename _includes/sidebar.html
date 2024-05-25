@@ -40,11 +40,11 @@
           <span>{{ site.data.locales[include.lang].tabs.['categories'] | default: 'categories' | upcase }}</span>
         </a>
       </li>
-      <!-- 풀스택 개발 -->
+      <!-- Full Stack 개발 -->
       <li class="nav-item{% if page.url == '/categories/Full-Stack-%EA%B0%9C%EB%B0%9C/' | relative_url %}{{ " active" }}{% endif %}">
         <a href="{{ '/categories/Full-Stack-%EA%B0%9C%EB%B0%9C/' | relative_url }}" class="nav-link" >
           <i class="fa-solid fa-laptop-code"></i>
-          풀스택 개발
+          Full Stack 개발
           {% assign posts_size = site.categories['Full Stack 개발'] | size %}
           <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
         </a>
