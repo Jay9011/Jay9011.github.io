@@ -2,20 +2,20 @@
 title: Call By Value, Call By Address, Call By Reference 란?
 date: 2023-09-19 21:20:43 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - 값 타입
-    - 데이터
-    - 참조 타입
-    - 함수
-    - 포인터
+  - c
+  - 값 타입
+  - 데이터
+  - 참조 타입
+  - 함수
+  - 포인터
 keywords:
-    - Call By Address
-    - Call By Reference
-    - Call By Value
-    - 함수
+  - Call By Address
+  - Call By Reference
+  - Call By Value
+  - 함수
 ---
 
 <span class="keyword">**Call by Value**</span>, <span class="keyword">**Call by Address**</span>, <span class="keyword">**Call by Reference**</span>는 **함수 호출 메커니즘에서 매개변수를 전달하는 세 가지 주요 방식**으로, 실제 매개변수와 형식 매개변수가 어떻게 상호작용 하는지, 어떻게 쓰이는지에 따라 구분한 방식입니다.

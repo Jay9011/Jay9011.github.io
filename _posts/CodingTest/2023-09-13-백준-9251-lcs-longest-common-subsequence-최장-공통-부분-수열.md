@@ -2,18 +2,18 @@
 title: (백준/C++) 9251_LCS(Longest Common Subsequence, 최장 공통 부분 수열)
 date: 2023-09-13 23:17:39 +0900
 categories:
-    - 프로그래밍
-    - 코딩테스트
+  - Full Stack 개발
+  - 코딩테스트
 tags:
-    - 동적 계획법
-    - 백준
-    - 코딩테스트
-    - dynamic programming
+  - 동적 계획법
+  - 백준
+  - 코딩테스트
+  - dynamic programming
 keywords:
-    - 동적 계획법
-    - 백준
-    - 코딩테스트
-    - dynamic programming
+  - 동적 계획법
+  - 백준
+  - 코딩테스트
+  - dynamic programming
 ---
 
 <span class="keyword">**LCS (Longest Common Subsequence, 최장 공통 부분 수열)**</span>은 <span class="important">**두 개의 문자열에서 공통으로 나타나는 가장 긴 부분 수열을 찾는 동적 프로그래밍 알고리즘**</span>입니다.

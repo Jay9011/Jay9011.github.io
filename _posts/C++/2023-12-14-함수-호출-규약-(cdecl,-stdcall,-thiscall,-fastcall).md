@@ -2,7 +2,7 @@
 title: 함수 호출 규약 (cdecl, stdcall, thiscall, fastcall)
 date: 2023-12-14 20:53:47 +0900
 categories:
-  - 프로그래밍
+  - Full Stack 개발
   - C++
 tags:
   - c

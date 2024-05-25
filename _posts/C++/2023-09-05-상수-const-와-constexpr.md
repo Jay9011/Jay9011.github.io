@@ -2,21 +2,21 @@
 title: (상수) const 와 constexpr
 date: 2023-09-05 22:06:42 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - const
-    - constexpr
-    - 자료형
-    - 변수
+  - c
+  - const
+  - constexpr
+  - 자료형
+  - 변수
 keywords:
-    - const
-    - constexpr
-    - 상수
-    - 클래스
-    - 포인터
-    - 함수
+  - const
+  - constexpr
+  - 상수
+  - 클래스
+  - 포인터
+  - 함수
 ---
 
 **`const`**는 <span class="font_highlight">**상수를 선언하는 제한자(qualifier)**</span>입니다. 즉, 한 번 초기화된 **`const`** 변수의 값은 변경할 수 없습니다.

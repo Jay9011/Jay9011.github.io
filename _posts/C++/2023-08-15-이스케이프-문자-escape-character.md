@@ -1,8 +1,12 @@
 ---
 title: 이스케이프 문자(escape character)
 date: 2023-08-15 18:03:05 +0900
-categories: [프로그래밍, C++]
-tags: [c, 문자]
+categories:
+  - Full Stack 개발
+  - C++
+tags:
+  - c
+  - 문자
 ---
 
  <span class="keyword">**이스케이프 문자(escape character)**</span> 혹은 <span class="keyword">**이스케이프 시퀀스(escape sequence)**</span>란, 특정 문자를 표현 또는 출력 제어를 하기 위한 특수한 문자입니다.
@@ -27,7 +31,7 @@ tags: [c, 문자]
 즉, 정리하자면
 
 1. **특수 문자**를 표현: 문자열 내에서 큰따옴표나 백슬래시 같은 특수 문자를 사용하고자 할 때 사용합니다. 예를 들어, C++에서 문자열 내에 큰따옴표를 포함시키려면 `\"`을 사용합니다.
-1. **제어 문자**를 표현: 줄 바꿈(newline, `\n`), 탭(tab, `\t`), 벨 소리(alert, `\a`) 등과 같은 제어를 위해 사용됩니다.
+2. **제어 문자**를 표현: 줄 바꿈(newline, `\n`), 탭(tab, `\t`), 벨 소리(alert, `\a`) 등과 같은 제어를 위해 사용됩니다.
  
 
 # 이스케이프 문자 표

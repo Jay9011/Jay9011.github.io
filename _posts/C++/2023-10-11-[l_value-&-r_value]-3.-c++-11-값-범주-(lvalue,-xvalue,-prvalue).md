@@ -2,24 +2,24 @@
 title: "[L_Value & R_Value] 3. C++ 11 값 범주 (Lvalue, Xvalue, Prvalue)"
 date: 2023-10-11 22:59:54 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - lvalue
-    - rvalue
-    - 값 타입
-    - 데이터
-    - 메모리
-    - 참조
-    - 참조 타입
+  - c
+  - lvalue
+  - rvalue
+  - 값 타입
+  - 데이터
+  - 메모리
+  - 참조
+  - 참조 타입
 math: false
 type: C++
 keywords:
-    - Lvalue
-    - Prvalue
-    - Xvalue
-    - 값 범주
+  - Lvalue
+  - Prvalue
+  - Xvalue
+  - 값 범주
 ---
 
 xvalue(eXpiring Value)는 C++ 11 이후에 추가된 개념으로 기존의 값 범주에서 변화가 생겼습니다.

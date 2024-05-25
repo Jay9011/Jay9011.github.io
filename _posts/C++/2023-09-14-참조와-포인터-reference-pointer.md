@@ -2,20 +2,20 @@
 title: 참조와 포인터 (Reference & Pointer)
 date: 2023-09-14 22:58:56 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - 데이터
-    - 메모리
-    - 포인터
-    - 변수
-    - 참조
+  - c
+  - 데이터
+  - 메모리
+  - 포인터
+  - 변수
+  - 참조
 keywords:
-    - Pointer
-    - Reference
-    - 참조
-    - 포인터
+  - Pointer
+  - Reference
+  - 참조
+  - 포인터
 ---
 
 # 포인터(Pointer)란?

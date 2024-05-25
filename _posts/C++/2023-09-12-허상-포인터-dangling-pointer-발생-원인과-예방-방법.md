@@ -2,17 +2,17 @@
 title: 허상 포인터 (Dangling pointer) 발생 원인과 예방 방법
 date: 2023-09-12 17:49:30 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - 포인터
-    - 메모리
+  - c
+  - 포인터
+  - 메모리
 keywords:
-    - pointer
-    - 포인터
-    - 허상 포인터
-    - Dangling pointers
+  - pointer
+  - 포인터
+  - 허상 포인터
+  - Dangling pointers
 ---
 
 <span class="keyword">**Dangling pointers**</span>는 <span class="font_highlight">**유효한 객체를 가리키지 않는 포인터**</span>를 말합니다.

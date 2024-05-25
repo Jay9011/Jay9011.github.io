@@ -19,7 +19,7 @@ title: 고양이와 별무리 도서관 # the main title
 tagline:  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Unreal C++ 게임 개발 공부를 위한 블로그입니다.
+  프로그래밍과 컴퓨터 공학을 공부하면서 정리한 내용들을 올리는 블로그입니다.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.

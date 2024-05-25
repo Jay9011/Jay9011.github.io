@@ -2,26 +2,26 @@
 title: "[L_Value & R_Value] 2. 우측 값 참조와 이동(move semantics)"
 date: 2023-09-30 12:01:15 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - lvalue
-    - rvalue
-    - 값 타입
-    - 데이터
-    - 메모리
-    - 참조
-    - 참조 타입
+  - c
+  - lvalue
+  - rvalue
+  - 값 타입
+  - 데이터
+  - 메모리
+  - 참조
+  - 참조 타입
 math: false
 type: C++
 keywords:
-    - Move Semantics
-    - R-value Reference
-    - 우측 값 참조
-    - 이동
-    - 참조 축약 규칙
-    - 완벽한 전달
+  - Move Semantics
+  - R-value Reference
+  - 우측 값 참조
+  - 이동
+  - 참조 축약 규칙
+  - 완벽한 전달
 ---
 
 저도 우측 값 참조(rvalue reference)를 어느 정도 이해했다고 생각했는데, 글로 표현하기 위해 다시 공부하고 정리하면서도 아직 어렵고 난해한 것 같습니다.

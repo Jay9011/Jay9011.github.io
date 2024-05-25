@@ -2,22 +2,22 @@
 title: C++ 캐스팅 키워드 (static_cast, dynamic_cast_, const_cast...)
 date: 2023-09-03 21:17:02 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - const
-    - 데이터
-    - 변수
-    - 자료형
-    - 컴파일
+  - c
+  - const
+  - 데이터
+  - 변수
+  - 자료형
+  - 컴파일
 keywords:
-    - const_cast
-    - dynamic_cast
-    - reinterpret_cast
-    - static_cast
-    - 정의되지 않은 동작
-    - undefined behavior
+  - const_cast
+  - dynamic_cast
+  - reinterpret_cast
+  - static_cast
+  - 정의되지 않은 동작
+  - undefined behavior
 ---
 
 C++에서는 C보다 다양한 캐스팅 연산자를 제공하여 타입 변환을 수행할 수 있습니다.

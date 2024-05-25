@@ -2,21 +2,21 @@
 title: 인라인 함수(inline function)
 date: 2023-09-21 21:56:33 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - inline
-    - 컴파일
-    - 함수
-    - 코드 최적화
+  - c
+  - inline
+  - 컴파일
+  - 함수
+  - 코드 최적화
 keywords:
-    - inline
-    - 명시적 inline
-    - 인라인 함수
-    - 컴파일
-    - 함수
-    - 암시적 inline
+  - inline
+  - 명시적 inline
+  - 인라인 함수
+  - 컴파일
+  - 함수
+  - 암시적 inline
 ---
 
 <span class="keyword">**inline 함수**</span>란, <span class="font_highlight">**컴파일 타임**에 함수 호출 위치에 **함수 전체 코드**를 **삽입**하는 것</span>으로, 함수 호출에 의한 **오버헤드를 줄이기 위해** 사용되는 함수입니다.

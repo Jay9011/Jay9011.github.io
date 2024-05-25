@@ -2,24 +2,24 @@
 title: 스마트 포인터 (unique_ptr, shared_ptr, weak_ptr, auto_ptr)
 date: 2023-09-16 23:20:15 +0900
 categories:
-    - 프로그래밍
-    - C++
+  - Full Stack 개발
+  - C++
 tags:
-    - c
-    - 데이터
-    - 메모리
-    - 변수
-    - 포인터
-    - 스마트 포인터
+  - c
+  - 데이터
+  - 메모리
+  - 변수
+  - 포인터
+  - 스마트 포인터
 keywords:
-    - auto_ptr
-    - Pointer
-    - shared_ptr
-    - unique_ptr
-    - weak_ptr
-    - 스마트 포인터
-    - 포인터
-    - RAII
+  - auto_ptr
+  - Pointer
+  - shared_ptr
+  - unique_ptr
+  - weak_ptr
+  - 스마트 포인터
+  - 포인터
+  - RAII
 ---
 
 기존 C/C++ 에서는 동적으로 할당 받은 메모리는 사용이 끝난 경우 반드시 해제해줘야 합니다. 만약, 메모리를 해제해주지 않으면 <span class="important">**메모리 누수(memory leak)**</span>가 발생할 수 있습니다.

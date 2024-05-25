@@ -2,7 +2,7 @@
 title: 스택 프레임(Stack Frame)과 콜스택(Call Stack)
 date: 2023-12-12 23:24:08 +0900
 categories:
-  - 프로그래밍
+  - Full Stack 개발
   - C++
 tags:
   - c

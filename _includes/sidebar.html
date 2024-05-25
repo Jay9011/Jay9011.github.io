@@ -40,12 +40,12 @@
           <span>{{ site.data.locales[include.lang].tabs.['categories'] | default: 'categories' | upcase }}</span>
         </a>
       </li>
-      <!-- 프로그래밍 -->
-      <li class="nav-item{% if page.url == '/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' | relative_url %}{{ " active" }}{% endif %}">
-        <a href="{{ '/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/' | relative_url }}" class="nav-link" >
+      <!-- 풀스택 개발 -->
+      <li class="nav-item{% if page.url == '/categories/Full-Stack-%EA%B0%9C%EB%B0%9C/' | relative_url %}{{ " active" }}{% endif %}">
+        <a href="{{ '/categories/Full-Stack-%EA%B0%9C%EB%B0%9C/' | relative_url }}" class="nav-link" >
           <i class="fa-solid fa-laptop-code"></i>
-          프로그래밍
-          {% assign posts_size = site.categories['프로그래밍'] | size %}
+          풀스택 개발
+          {% assign posts_size = site.categories['Full Stack 개발'] | size %}
           <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
         </a>
         <!-- C++ -->
@@ -57,6 +57,42 @@
             <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
           </a>
         </li>
+        <!-- C++ -->
+        <!-- <li class="nav-item{% if page.url == '/categories/cs/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/cs/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            C#
+            {% assign posts_size = site.categories['C#'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li> -->
+        <!-- ASP.NET -->
+        <!-- <li class="nav-item{% if page.url == '/categories/aspnet/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/aspnet/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            ASP.NET
+            {% assign posts_size = site.categories['ASP.NET'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li> -->
+        <!-- javascript -->
+        <!-- <li class="nav-item{% if page.url == '/categories/javascript/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/javascript/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            javascript
+            {% assign posts_size = site.categories['javascript'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li> -->
+        <!-- REACT -->
+        <!-- <li class="nav-item{% if page.url == '/categories/react/' | relative_url %}{{ " active" }}{% endif %}">
+          <a href="{{ '/categories/react/' | relative_url }}" class="nav-link py-1">
+            <i class="fa fa-angle-right"></i>
+            REACT
+            {% assign posts_size = site.categories['REACT'] | size %}
+            <span class="text-muted small font-weight-light">&nbsp;({{ posts_size }})</span>
+          </a>
+        </li> -->
         <!-- 코딩 테스트 -->
         <li class="nav-item{% if page.url == '/categories/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/' | relative_url %}{{ " active" }}{% endif %}">
           <a href="{{ '/categories/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/' | relative_url }}" class="nav-link py-1">

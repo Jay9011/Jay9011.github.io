@@ -2,7 +2,7 @@
 title: 구조체 패딩 (Structure Padding)
 date: 2023-12-28 23:29:45 +0900
 categories:
-  - 프로그래밍
+  - Full Stack 개발
   - C++
 tags:
   - c
