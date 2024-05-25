@@ -2,8 +2,8 @@
 title: C++ 캐스팅 키워드 (static_cast, dynamic_cast_, const_cast...)
 date: 2023-09-03 21:17:02 +0900
 categories:
-  - Full Stack 개발
   - C++
+  - 풀스택 개발
 tags:
   - c
   - const

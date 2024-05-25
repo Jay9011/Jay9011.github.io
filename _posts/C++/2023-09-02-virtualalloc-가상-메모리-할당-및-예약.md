@@ -2,17 +2,17 @@
 title: VirtualAlloc (가상 메모리 할당 및 예약)
 date: 2023-09-02 17:36:19 +0900
 categories:
-    - Full Stack 개발
-    - C++
+  - C++
+  - 풀스택 개발
 tags:
-    - c
-    - 동적
-    - 메모리
-    - 운영체제
+  - c
+  - 동적
+  - 메모리
+  - 운영체제
 keywords:
-    - Virtual Alloc
-    - 가상 메모리
-    - 메모리
+  - Virtual Alloc
+  - 가상 메모리
+  - 메모리
 ---
 
 

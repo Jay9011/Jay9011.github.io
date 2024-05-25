@@ -2,8 +2,8 @@
 title: 스마트 포인터 (unique_ptr, shared_ptr, weak_ptr, auto_ptr)
 date: 2023-09-16 23:20:15 +0900
 categories:
-  - Full Stack 개발
   - C++
+  - 풀스택 개발
 tags:
   - c
   - 데이터

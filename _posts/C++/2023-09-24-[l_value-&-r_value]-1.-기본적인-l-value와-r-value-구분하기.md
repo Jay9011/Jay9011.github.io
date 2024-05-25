@@ -2,8 +2,8 @@
 title: "[L_Value & R_Value] 1. 기본적인 L-Value와 R-Value 구분하기"
 date: 2023-09-24 20:11:14 +0900
 categories:
-  - Full Stack 개발
   - C++
+  - 풀스택 개발
 tags:
   - c
   - lvalue

@@ -2,8 +2,8 @@
 title: RAII와 스마트 포인터 (Resource Acquisition Is Initialization)
 date: 2023-09-18 23:19:48 +0900
 categories:
-  - Full Stack 개발
   - C++
+  - 풀스택 개발
 tags:
   - c
   - 객체 지향

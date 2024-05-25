@@ -2,8 +2,8 @@
 title: "[L_Value & R_Value] 3. C++ 11 값 범주 (Lvalue, Xvalue, Prvalue)"
 date: 2023-10-11 22:59:54 +0900
 categories:
-  - Full Stack 개발
   - C++
+  - 풀스택 개발
 tags:
   - c
   - lvalue

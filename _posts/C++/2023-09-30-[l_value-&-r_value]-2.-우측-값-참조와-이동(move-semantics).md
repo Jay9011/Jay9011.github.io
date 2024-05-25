@@ -2,8 +2,8 @@
 title: "[L_Value & R_Value] 2. 우측 값 참조와 이동(move semantics)"
 date: 2023-09-30 12:01:15 +0900
 categories:
-  - Full Stack 개발
   - C++
+  - 풀스택 개발
 tags:
   - c
   - lvalue

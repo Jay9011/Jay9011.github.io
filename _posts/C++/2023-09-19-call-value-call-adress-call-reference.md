@@ -2,8 +2,8 @@
 title: Call By Value, Call By Address, Call By Reference 란?
 date: 2023-09-19 21:20:43 +0900
 categories:
-  - Full Stack 개발
   - C++
+  - 풀스택 개발
 tags:
   - c
   - 값 타입

@@ -2,8 +2,8 @@
 title: 참조와 포인터 (Reference & Pointer)
 date: 2023-09-14 22:58:56 +0900
 categories:
-  - Full Stack 개발
   - C++
+  - 풀스택 개발
 tags:
   - c
   - 데이터

@@ -2,8 +2,8 @@
 title: (백준/C++) 9251_LCS(Longest Common Subsequence, 최장 공통 부분 수열)
 date: 2023-09-13 23:17:39 +0900
 categories:
-  - Full Stack 개발
   - 코딩테스트
+  - 풀스택 개발
 tags:
   - 동적 계획법
   - 백준
