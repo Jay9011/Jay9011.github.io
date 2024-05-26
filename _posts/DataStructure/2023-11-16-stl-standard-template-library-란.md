@@ -27,7 +27,7 @@ keywords:
 
 <span class="keyword">**STL(Standard Template Library)**</span>은 <span class="font_highlight">**일반화 프로그래밍(Generic Programming)**</span> 기법을 활용하여, **<span class="font_highlight">데이터 타입에 얽매이지 않고 유연하게 적용</span>될 수 있는 자료 구조와 알고리즘을 제공하는 라이브러리**입니다.
 
-여기서 <span class="keyword">**일반화 프로그래밍(Generic Programming)**</span>이란, **<span class="font_highlight">데이터 타입에서 독립적인 코드</span>를 작성할 수 있게 해주는 프로그래밍 패러다임**으로, C++의 템플릿(Template)을 통해 구현됩니다.
+여기서 <span class="keyword">**일반화 프로그래밍(Generic Programming)**</span>이란, **<span class="font_highlight">데이터 타입에서 독립적인 코드</span>를 작성할 수 있게 해주는 프로그래밍 패러다임**으로, C++에서는 템플릿(Template)을 통해 구현됩니다.
 
 STL(표준 템플릿 라이브러리)은 이러한 프로그래밍 패러다임을 통해, **데이터 구조와 알고리즘을 유연하게 재사용할 수 있는 강력한 도구**입니다.
 
@@ -68,9 +68,7 @@ STL 알고리즘은 **<span class="font_highlight">데이터를 처리하고 조
 
 ## 반복자 (Iterator)
 
-반복자. 흔히 이터레이터라고 부르는 이것은 **포인터와 유사한 개념**으로, **컨테이너의 요소를 순회**할 수 있게 해줍니다.
-
-이터레이터는 **컨테이너에 저장된 <span class="font_highlight">데이터를 순회</span>하여 각 <span class="font_highlight">데이터에 대한 접근을 제공</span>하는 객체**로, 컨테이터의 시작과 끝이라는 개념이 존재합니다. (begin, end)
+반복자. 흔히 이터레이터라고 부르는 이것은 **컨테이너에 저장된 <span class="font_highlight">데이터를 순회</span>하여 각 <span class="font_highlight">데이터에 대한 접근을 제공</span>하는 객체**입니다.
 
 주요 이터레이터 유형은 다음과 같습니다.
 
