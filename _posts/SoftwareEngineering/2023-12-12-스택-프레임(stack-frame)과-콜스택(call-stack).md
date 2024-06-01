@@ -2,17 +2,16 @@
 title: 스택 프레임(Stack Frame)과 콜스택(Call Stack)
 date: 2023-12-12 23:24:08 +0900
 categories:
-  - 풀스택 개발
-  - C++
+  - 컴퓨터 공학
+  - 소프트웨어 공학
 tags:
-  - c
   - 메모리
   - 스택
   - 이론
   - 컴퓨터 구조
   - 운영체제
 math: false
-type: C++
+type: SoftwareEngineering
 keywords:
   - BP
   - Call Stack
