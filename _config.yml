@@ -148,12 +148,22 @@ defaults:
       path: _drafts
     values:
       comments: false
+      sitemap: false
   - scope:
       path: ""
       type: tabs # see `site.collections`
     values:
       layout: page
       permalink: /:title/
+      sitemap: false
+  - scope:
+      path: categories/
+    values:
+      sitemap: false
+  - scope:
+      path: tags/
+    values:
+      sitemap: false
   - scope:
       path: assets/img/favicons
     values:
