@@ -103,6 +103,28 @@ public class Dog : Animal
 3. **접근 제한자**: 재정의되는 메서드의 접근 제한자는 기본 클래스의 메서드와 **동일**하거나 **더 넓은** 접근 수준을 가져야 합니다.
 4. **기본 클래스의 선언**: 기본 클래스의 메서드는 `virtual` 키워드로 선언되어야 하며, 파생 클래스의 메서드는 `override` 키워드를 사용하여 재정의되어야 합니다.
 
+# base 키워드
+
+`base` 키워드는 <span class="font_highlight">파생 클래스에서 **기본 클래스**의 **멤버**를 사용하거나 호출할 때 사용</span>됩니다.
+
+오버라이딩된 메서드 내에서 기본 클래스의 메서드를 호출함으로써, 기본 클래스의 동작을 유지하면서 추가적인 기능을 확장(구현)할 수 있습니다.
+
+```csharp
+public class Dog : Animal
+{
+    public override void Speak()
+    {
+        base.Speak(); // 기본 클래스의 Speak() 호출
+        Console.WriteLine("The dog barks");
+    }
+}
+```
+위 예제에서 `Dog` 클래스의 `Speak()` 메서드는 먼저 `base.Speak()`를 호출하여 기본 클래스의 동작을 실행한 후, 추가적인 동작을 수행합니다.
+<br>
+이를 통해 기본 클래스의 기능을 확장하거나 변경할 수 있습니다.
+
+base에 대한 키워드는 [Class 글](/posts/%ED%81%B4%EB%9E%98%EC%8A%A4(class)%EC%99%80-%EB%B0%B1%ED%82%B9-%ED%95%84%EB%93%9C(backing-field),-%EA%B7%B8%EB%A6%AC%EA%B3%A0-base%EC%99%80-this/#base-%ED%82%A4%EC%9B%8C%EB%93%9C){: target="_blank"}에서 한 번 다루었기 때문에 짧게 넘어가겠습니다.
+
 # sealed 키워드
 
 ## 메서드 재정의 방지
@@ -159,9 +181,10 @@ sealed class SealedClass
 
 # 참고
 
-[[OOP] 객체지향 프로그래밍(Object-Oriented Programming, OOP) 정리](https://jay9011.github.io/posts/oop-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D(object-oriented-programming,-oop)-%EC%A0%95%EB%A6%AC/){: }
+[[OOP] 객체지향 프로그래밍(Object-Oriented Programming, OOP) 정리](/posts/oop-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D(object-oriented-programming,-oop)-%EC%A0%95%EB%A6%AC/){: }
 
-[[OOP] 상속성(Inheritance)](https://jay9011.github.io/posts/oop-%EC%83%81%EC%86%8D%EC%84%B1(inheritance)/){: }
+[[OOP] 상속성(Inheritance)](/posts/oop-%EC%83%81%EC%86%8D%EC%84%B1(inheritance)/){: }
 
-[[OOP] 다형성(Polymorphism)](https://jay9011.github.io/posts/oop-%EB%8B%A4%ED%98%95%EC%84%B1(polymorphism)/){: }
+[[OOP] 다형성(Polymorphism)](/posts/oop-%EB%8B%A4%ED%98%95%EC%84%B1(polymorphism)/){: }
 
+[클래스(Class)와 백킹 필드(backing field), 그리고 base와 this](/posts/%ED%81%B4%EB%9E%98%EC%8A%A4(class)%EC%99%80-%EB%B0%B1%ED%82%B9-%ED%95%84%EB%93%9C(backing-field),-%EA%B7%B8%EB%A6%AC%EA%B3%A0-base%EC%99%80-this/){: }
