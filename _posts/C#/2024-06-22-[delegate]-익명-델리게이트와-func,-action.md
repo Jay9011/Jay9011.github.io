@@ -206,7 +206,7 @@ internal class Program
 
 # 참고
 
-<!-- TODO: 람다식 링크 -->
+[C＃의 람다(Lambda)와 캡처(Capture), 클로저(closure)](/posts/c-%EC%9D%98-%EB%9E%8C%EB%8B%A4(lambda)%EC%99%80-%EC%BA%A1%EC%B2%98(capture),-%ED%81%B4%EB%A1%9C%EC%A0%80(closure)/){: }
 
 
 [[delegate] 01.델리게이트의 정의와 정체, 체이닝, 사용 목적](/posts/delegate-%EB%8D%B8%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9D%98-%EC%A0%95%EC%9D%98%EC%99%80-%EC%A0%95%EC%B2%B4,-%EC%B2%B4%EC%9D%B4%EB%8B%9D,-%EC%82%AC%EC%9A%A9-%EB%AA%A9%EC%A0%81/){: }
