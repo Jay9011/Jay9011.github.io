@@ -311,4 +311,8 @@ let person = {
 
 [[OOP] 객체지향 프로그래밍(Object-Oriented Programming, OOP) 정리](/posts/oop-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D(object-oriented-programming,-oop)-%EC%A0%95%EB%A6%AC/){: }
 
+[중첩 함수 (Nested Function)와 클로저 (closure)](/posts/%EC%A4%91%EC%B2%A9-%ED%95%A8%EC%88%98(nested-function)%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-(closure)/){: }
+
+[함수 표현식 (Function Expression)](/posts/%ED%95%A8%EC%88%98-%ED%91%9C%ED%98%84%EC%8B%9D-(function-expression)/){: }
+
 [화살표 함수 (Arrow Function), 람다 (Lambda)](/posts/%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-(arrow-function),-%EB%9E%8C%EB%8B%A4(lambda)/){: }
