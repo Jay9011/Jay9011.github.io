@@ -1,5 +1,5 @@
 ---
-title: 클래스(Class)와 백킹 필드(backing field), 그리고 base와 this
+title: 클래스(Class), 프로퍼티와 백킹 필드(backing field), base와 this
 date: 2024-06-02 16:11:48 +0900
 categories:
     - 풀스택 개발
