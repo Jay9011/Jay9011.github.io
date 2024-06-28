@@ -96,5 +96,5 @@ console.log(sum(1, 2, 3, 4));  // 출력: 10
 
 # 참고
 
-[함수 표현식 (Function Expression)](http://127.0.0.1:4000/posts/%ED%95%A8%EC%88%98-%ED%91%9C%ED%98%84%EC%8B%9D-(function-expression)/){: }
+[함수 표현식 (Function Expression)](/posts/%ED%95%A8%EC%88%98-%ED%91%9C%ED%98%84%EC%8B%9D-(function-expression)/){: }
 
