@@ -268,3 +268,5 @@ Dictionary<string, object> dc = mapper.Map<DTO, Dictionary<string, object>>(dto)
 # 참고
 
 [AutoMapper -- AutoMapper documentation](https://docs.automapper.org/en/stable/index.html){: }
+
+[AutoMapper / 2. 다양한 사용 방법](/posts/automapper-2.-%EB%8B%A4%EC%96%91%ED%95%9C-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95/){: }
